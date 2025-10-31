@@ -629,7 +629,7 @@ const qna = [
     {num:688,que:"What tense is 'hablaba'?",true: "imperfect",false1: "present",false2: "preterite"},
     {num:689,que:"What tense is 'hablaré'?",true: "future",false1: "conditional",false2: "present"},
     {num:690,que:"What tense is 'hable'?",true: "present subjunctive",false1: "present",false2: "preterite"},
-    num:691,que:"Present 'yo' form of 'conducir'",true: "conduzco",false1: "conduces",false2: "conducen"},
+    {num:691,que:"Present 'yo' form of 'conducir'",true: "conduzco",false1: "conduces",false2: "conducen"},
     {num:692,que:"Present 'tú' form of 'traducir'",true: "traduces",false1: "traduzco",false2: "traducen"},
     {num:693,que:"Present 'él' form of 'producir'",true: "produce",false1: "producen",false2: "produzco"},
     {num:694,que:"Present 'nosotros' form of 'conocer'",true: "conocemos",false1: "conocen",false2: "conocéis"},
@@ -1152,4 +1152,5 @@ function shuffleArray(array) {
     return array;
 
 }
+
 
