@@ -1082,7 +1082,7 @@ const qna = [
 
 */
 
-let currentQuestionIndex = 0;
+let currentQuestionIndex = shuffleArray(qna);
 
 document.addEventListener('DOMContentLoaded', function() {
     setQ(currentQuestionIndex);
@@ -1093,7 +1093,6 @@ function setQ(index) {
     const currentQ = qna[index];
     document.getElementById("question").innerHTML = currentQ.que;
     
-    // Create array of answers and shuffle them
     const answers = [currentQ.true, currentQ.false1, currentQ.false2];
     shuffleArray(answers);
     
@@ -1153,3 +1152,4 @@ function shuffleArray(array) {
     return array;
 
 }
+
