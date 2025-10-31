@@ -1162,6 +1162,11 @@ const qna = [
     {num:1178,que:"Chilean: What does 'brígido' mean?",true: "intense/crazy",false1: "brigade",false2: "scary"},
     {num:1179,que:"Chilean: What does 'gamba' mean?",true: "100 pesos",false1: "leg",false2: "shrimp"},
     {num:1180,que:"Chilean: What does 'zorrón' mean?",true: "lazy person",false1: "fox",false2: "sleepy"},
+    {num:1201,que:"Chilean: What does 'pato' mean in 'hacer pato'?",true: "to play hooky/skip",false1: "to make duck",false2: "to be lazy"},
+{num:1202,que:"Chilean: What does 'quedarse pelando' mean?",true: "to be left with nothing",false1: "to stay peeling",false2: "to be bald"},
+{num:1203,que:"Chilean: What does 'cuma' mean?",true: "vulgar/tacky",false1: "knife",false2: "cumulative"},
+{num:1204,que:"Chilean: What does 'piola' mean?",true: "quiet/discreet",false1: "string",false2: "cool"},
+{num:1205,que:"Chilean: What does 'guata' mean?",true: "belly/stomach",false1: "water",false2: "baby"},
 
     // More General Useful Phrases (1181-1200)
     {num:1181,que:"What does 'tener en cuenta' mean?",true: "to keep in mind",false1: "to have in account",false2: "to consider"},
@@ -1262,5 +1267,6 @@ function shuffleArray(array) {
     return array;
 
 }
+
 
 
