@@ -633,7 +633,6 @@ const qna = [
     {num:692,que:"Present 'tú' form of 'traducir'",true: "traduces",false1: "traduzco",false2: "traducen"},
     {num:693,que:"Present 'él' form of 'producir'",true: "produce",false1: "producen",false2: "produzco"},
     {num:694,que:"Present 'nosotros' form of 'conocer'",true: "conocemos",false1: "conocen",false2: "conocéis"},
-    {num:695,que:"Present 'vosotros' form of 'agradecer'",true: "agradecéis",false1: "agradecemos",false2: "agradecen"},
     {num:696,que:"Present 'yo' form of 'obedecer'",true: "obedezco",false1: "obedeces",false2: "obedecen"},
     {num:697,que:"Present 'yo' form of 'merecer'",true: "merezco",false1: "mereces",false2: "merecen"},
     {num:698,que:"Present 'yo' form of 'establecer'",true: "establezco",false1: "estableces",false2: "establecen"},
@@ -1155,3 +1154,4 @@ function shuffleArray(array) {
     return array;
 
 }
+
