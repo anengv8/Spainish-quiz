@@ -14,7 +14,7 @@ html, body {
   justify-content: center;
   text-align: center;
 }
-.workbox{
+#workbox{
   margin: 0;
   padding: 0;
   width: initial;
@@ -53,7 +53,6 @@ font-size: 75px;
   width: auto;
   height: auto;
   padding: 100px;
-  background-color: rgb(112, 78, 10);
   flex-direction: column;
   flex-wrap: nowrap;
 }
