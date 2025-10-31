@@ -1078,16 +1078,18 @@ const qna = [
     {num:1099,que:"Use of 'se' impersonal",true: "for general statements (se habla español)",false1: "for reflexive actions",false2: "for indirect object"},
     {num:1100,que:"Use of 'se' accidental",true: "for unplanned occurrences (se me olvidó)",false1: "for reflexive actions",false2: "for impersonal statements"},
 ];
-/*
+/* 
 
 */
 
-let currentQuestionIndex = shuffleArray(qna);
+let currentQuestionIndex = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
     setQ(currentQuestionIndex);
     setupEventListeners();
 });
+
+shuffleArray(qna);
 
 function setQ(index) {
     const currentQ = qna[index];
@@ -1120,10 +1122,10 @@ function setupEventListeners() {
 
 function checkAnswer(button) {
     const isCorrect = button.dataset.correct === "true";
-    const buttonbox = document.getElementById("buttonbox");
-    
+    const buttonbox = document.getElementById("workbox");
+
     if (isCorrect) {
-        buttonbox.style.backgroundColor = "green";
+        workbox.style.backgroundColor = "green";
         // Move to next question after delay
         setTimeout(function() {
             currentQuestionIndex++;
@@ -1134,6 +1136,7 @@ function checkAnswer(button) {
                 document.getElementById("question").innerHTML = "Quiz Complete! 🎉";
                 buttonbox.innerHTML = "<p>Well done! You finished all questions.</p>";
             }
+        }, 1000); // Added missing delay parameter
     } else {
         buttonbox.style.backgroundColor = "red";
         // Reset color after short delay
@@ -1152,5 +1155,3 @@ function shuffleArray(array) {
     return array;
 
 }
-
-
