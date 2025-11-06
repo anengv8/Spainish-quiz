@@ -287,7 +287,7 @@ const qna = [
     {num: 53, que: "Conditional: all verbs (él/ella)", true: "ía", false1: "á", false2: "ías"},
     {num: 54, que: "Conditional: all verbs (nosotros)", true: "íamos", false1: "ámos", false2: "emos"},
     {num: 55, que: "Conditional: all verbs (ellos)", true: "ían", false1: "án", false2: "ías"},
-
+/*
     // PRESENT SUBJUNCTIVE ENDINGS
     {num: 56, que: "Present Subjunctive: -ar verbs (yo)", true: "e", false1: "a", false2: "o"},
     {num: 57, que: "Present Subjunctive: -ar verbs (tú)", true: "es", false1: "as", false2: "a"},
@@ -306,7 +306,7 @@ const qna = [
     {num: 68, que: "Present Subjunctive: -ir verbs (él/ella)", true: "a", false1: "e", false2: "an"},
     {num: 69, que: "Present Subjunctive: -ir verbs (nosotros)", true: "amos", false1: "emos", false2: "imos"},
     {num: 70, que: "Present Subjunctive: -ir verbs (ellos)", true: "an", false1: "en", false2: "amos"},
-
+*/
     // PRESENT PARTICIPLE (-ing form)
     {num: 71, que: "Present Participle: -ar verbs", true: "ando", false1: "iendo", false2: "endo"},
     {num: 72, que: "Present Participle: -er verbs", true: "iendo", false1: "ando", false2: "endo"},
@@ -316,7 +316,7 @@ const qna = [
     {num: 74, que: "Past Participle: -ar verbs", true: "ado", false1: "ido", false2: "ando"},
     {num: 75, que: "Past Participle: -er verbs", true: "ido", false1: "ado", false2: "iendo"},
     {num: 76, que: "Past Participle: -ir verbs", true: "ido", false1: "ado", false2: "iendo"},
-
+/*
     // AFFIRMATIVE COMMANDS
     {num: 77, que: "Affirmative Command: -ar verbs (tú)", true: "a", false1: "e", false2: "as"},
     {num: 78, que: "Affirmative Command: -er verbs (tú)", true: "e", false1: "a", false2: "es"},
@@ -357,7 +357,7 @@ const qna = [
     {num: 99, que: "Irregular: ser (yo present)", true: "oy", false1: "o", false2: "oy"},
     {num: 100, que: "Irregular: ir (yo present)", true: "oy", false1: "o", false2: "oy"},
    
-    
+    */
     
     
     {num: 1, que: "of / from", true: "de", false1: "a", false2: "en"},
@@ -390,7 +390,7 @@ const qna = [
     {num: 28, que: "during", true: "durante", false1: "hasta", false2: "desde"},
     {num: 29, que: "after", true: "después de", false1: "antes de", false2: "durante"},
     {num: 30, que: "before", true: "antes de", false1: "después de", false2: "durante"},
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // QUANTIFIERS (25 questions)
     {num: 31, que: "much / many / a lot", true: "mucho", false1: "poco", false2: "bastante"},
     {num: 32, que: "little / few", true: "poco", false1: "mucho", false2: "bastante"},
@@ -870,8 +870,3 @@ function shuffleArray(array) {
     return array;
 
 }
-
-
-
-
-
