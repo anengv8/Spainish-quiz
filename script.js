@@ -218,6 +218,7 @@ const qna = [
     {num: 198, que: "Imperfect: él/ella (preferir)", true: "prefería", false1: "prefirió", false2: "prefiere"},
     {num: 199, que: "Present: yo (seguir)", true: "sigo", false1: "sigue", false2: "siguen"},
     {num: 200, que: "Future: tú (seguir)", true: "seguirás", false1: "sigues", false2: "seguías"},
+  /*  
     {num: 1, que: "Present: -ar verbs (yo)", true: "o", false1: "a", false2: "e"},
     {num: 2, que: "Present: -ar verbs (tú)", true: "as", false1: "es", false2: "a"},
     {num: 3, que: "Present: -ar verbs (él/ella)", true: "a", false1: "e", false2: "an"},
@@ -287,7 +288,7 @@ const qna = [
     {num: 53, que: "Conditional: all verbs (él/ella)", true: "ía", false1: "á", false2: "ías"},
     {num: 54, que: "Conditional: all verbs (nosotros)", true: "íamos", false1: "ámos", false2: "emos"},
     {num: 55, que: "Conditional: all verbs (ellos)", true: "ían", false1: "án", false2: "ías"},
-/*
+
     // PRESENT SUBJUNCTIVE ENDINGS
     {num: 56, que: "Present Subjunctive: -ar verbs (yo)", true: "e", false1: "a", false2: "o"},
     {num: 57, que: "Present Subjunctive: -ar verbs (tú)", true: "es", false1: "as", false2: "a"},
@@ -870,3 +871,4 @@ function shuffleArray(array) {
     return array;
 
 }
+
