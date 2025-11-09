@@ -307,7 +307,7 @@ const qna = [
     {num: 68, que: "Present Subjunctive: -ir verbs (él/ella)", true: "a", false1: "e", false2: "an"},
     {num: 69, que: "Present Subjunctive: -ir verbs (nosotros)", true: "amos", false1: "emos", false2: "imos"},
     {num: 70, que: "Present Subjunctive: -ir verbs (ellos)", true: "an", false1: "en", false2: "amos"},
-*/
+
     // PRESENT PARTICIPLE (-ing form)
     {num: 71, que: "Present Participle: -ar verbs", true: "ando", false1: "iendo", false2: "endo"},
     {num: 72, que: "Present Participle: -er verbs", true: "iendo", false1: "ando", false2: "endo"},
@@ -317,7 +317,7 @@ const qna = [
     {num: 74, que: "Past Participle: -ar verbs", true: "ado", false1: "ido", false2: "ando"},
     {num: 75, que: "Past Participle: -er verbs", true: "ido", false1: "ado", false2: "iendo"},
     {num: 76, que: "Past Participle: -ir verbs", true: "ido", false1: "ado", false2: "iendo"},
-/*
+
     // AFFIRMATIVE COMMANDS
     {num: 77, que: "Affirmative Command: -ar verbs (tú)", true: "a", false1: "e", false2: "as"},
     {num: 78, que: "Affirmative Command: -er verbs (tú)", true: "e", false1: "a", false2: "es"},
@@ -871,4 +871,5 @@ function shuffleArray(array) {
     return array;
 
 }
+
 
