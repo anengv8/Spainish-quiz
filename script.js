@@ -826,8 +826,8 @@ function shuffleArray(array){
 }
 
 function selectquetype(){
-    currentquetype = Math.floor(Math.random() * 10); if (currentquetype < 7 ){dis3choiceque()} else {disconjtableque()};
-    console.log("success?")
+   /* currentquetype = Math.floor(Math.random() * 10); if (currentquetype < 7 ){} else {disconjtableque()};
+    console.log("success?")*/dis3choiceque()
 }
 
 function dis3choiceque() {
@@ -863,7 +863,7 @@ buttons.forEach(btnId => {document.getElementById(btnId).disabled = true;});
 setTimeout(function() {buttonbox.style.backgroundColor = "";buttons.forEach(btnId => {document.getElementById(btnId).disabled = false;});}, 1500);}
 }
 
-function disconjtableque(){
+/*function disconjtableque(){
 document.getElementById('threechoice').style.display = "none";
 document.getElementById('conjtable').style.display = "";
 let queindex = shuffleArray(conjtableque)[0];
@@ -881,6 +881,7 @@ function displayConjTableQuestion() {
             document.querySelector(`#${pronoun} td:nth-child(${i + 1})`).textContent = 
                conjtableque[pronoun][i];}});
 }
+*/
 
 
 
