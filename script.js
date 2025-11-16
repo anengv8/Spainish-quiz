@@ -819,8 +819,6 @@ document.getElementById('wanswer').innerHTML = Wanswer
 startfunc()
 }
 
-document.getElementById('startbtntop').onclick  = ()=> resetAll()
-
 function shuffleArray(array){
     for (let i = array.length - 1; i > 0; i--) {const j = Math.floor(Math.random() * (i + 1));[array[i], array[j]] = [array[j], array[i]];}return array;
 }
@@ -881,5 +879,6 @@ function displayConjTableQuestion() {
             document.querySelector(`#${pronoun} td:nth-child(${i + 1})`).textContent = 
                conjtableque[pronoun][i];}});
 }
+
 
 
