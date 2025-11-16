@@ -1,23 +1,86 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen">   
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">   
 </head>
-  <body>
-    <div class="titlebox"> 
-    <h1 class="title"> Recordando español .</h1>
-    </div>
-        <div id="workbox">
-          <div class="questionbox">
-            <h1 id="question">what is the definition of "..."</h1>
+<body>
+<div class="titlebox"> 
+  <div id="statsnstart">
+    <button id="startbtntop">Start</button>
+    <h2 id="ranswer">0</h2>
+    <h2 id="wanswer">0</h2>
+  </div>
+<h1 class="title"> Recordando español .</h1>
+</div>
+<div id="workbox">
+<div id="start" style="display: none;">
+<button id="startbtn">Start</button>
+</div>
+<div id="threechoice"  style="display:none;">
+            <div class="questionbox">
+            <h1 id="question">what is the definition of "......................."</h1>
           </div>
           <div id="choicesbox">
               <div id="buttonbox">
-                <button id="button1">test 1</button>
-                <button id="button2">test 2 is longer</button>
-                <button id="button3">t</button>
+                <button id="button1" onclick="checkAnswer(this)"></button>
+                <button id="button2" onclick="checkAnswer(this)"></button>
+                <button id="button3" onclick="checkAnswer(this)"></button>
               </div>
           </div>
-        </div>
-            <script src="script.js"></script>
-  </body>
+</div>
+<div id="conjtable"  style="display:none;">
+            <div>
+              <div class="questionbox">
+            <h1 id="question">what is the definition of "......................."</h1>
+          </div>
+  <table id="conjtablebox">
+    <tbody>
+      <tr id="conjtitle">
+        <th>Present</th>
+        <th>Pretierite</th>
+        <th>Imperfect</th>
+        <th>Condtitional</th>
+        <th>Future</th>
+      </tr>
+      <tr id="yo">
+        <td>hablo</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="tu">
+        <td>Dertgredgregre</td>
+        <td>D</td>
+        <td>Dertgredgregre</td>
+        <td></td>
+        <td>ertgredgregre</td>
+      </tr>
+      <tr id="el">
+        <td>D</td>
+        <td>D</td>
+        <td>ertgredgregreD</td>
+        <td>D</td>
+        <td>ertgredgregre</td>
+      </tr>
+      <tr id="nos">
+        <td>ertgredgregre</td>
+        <td>ertgredgregre</td>
+        <td>ertgredgregre</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="ellos">
+        <td></td>
+        <td>D</td>
+        <td>ertgredgregre</td>
+        <td>ertgredgregre</td>
+        <td>ertgredgregre</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
 </html>
