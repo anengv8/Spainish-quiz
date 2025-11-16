@@ -800,6 +800,8 @@ document.addEventListener('DOMContentLoaded', function(){shuffleArray(qna);shuff
 });
 if(!Ranswer == 0 ) {document.getElementById('ranswer').innerHTML = Ranswer}
 
+document.getElementById('startbtntop').onclick  = ()=> resetAll()
+
 function startfunc(){
 document.getElementById('threechoice').style.display = "none";
 document.getElementById('conjtable').style.display = "none";
@@ -879,6 +881,7 @@ function displayConjTableQuestion() {
             document.querySelector(`#${pronoun} td:nth-child(${i + 1})`).textContent = 
                conjtableque[pronoun][i];}});
 }
+
 
 
 
