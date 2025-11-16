@@ -218,7 +218,7 @@ const qna = [
     {num: 198, que: "Imperfect: él/ella (preferir)", true: "prefería", false1: "prefirió", false2: "prefiere"},
     {num: 199, que: "Present: yo (seguir)", true: "sigo", false1: "sigue", false2: "siguen"},
     {num: 200, que: "Future: tú (seguir)", true: "seguirás", false1: "sigues", false2: "seguías"},
-  /*  
+ /*   
     {num: 1, que: "Present: -ar verbs (yo)", true: "o", false1: "a", false2: "e"},
     {num: 2, que: "Present: -ar verbs (tú)", true: "as", false1: "es", false2: "a"},
     {num: 3, que: "Present: -ar verbs (él/ella)", true: "a", false1: "e", false2: "an"},
@@ -357,10 +357,7 @@ const qna = [
     // COMMON IRREGULAR PATTERNS
     {num: 99, que: "Irregular: ser (yo present)", true: "oy", false1: "o", false2: "oy"},
     {num: 100, que: "Irregular: ir (yo present)", true: "oy", false1: "o", false2: "oy"},
-   
-    */
-    
-    
+   */
     {num: 1, que: "of / from", true: "de", false1: "a", false2: "en"},
     {num: 2, que: "to / at", true: "a", false1: "de", false2: "en"},
     {num: 3, que: "in / on / at", true: "en", false1: "a", false2: "de"},
@@ -391,7 +388,7 @@ const qna = [
     {num: 28, que: "during", true: "durante", false1: "hasta", false2: "desde"},
     {num: 29, que: "after", true: "después de", false1: "antes de", false2: "durante"},
     {num: 30, que: "before", true: "antes de", false1: "después de", false2: "durante"},
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     // QUANTIFIERS (25 questions)
     {num: 31, que: "much / many / a lot", true: "mucho", false1: "poco", false2: "bastante"},
     {num: 32, que: "little / few", true: "poco", false1: "mucho", false2: "bastante"},
@@ -666,7 +663,6 @@ const qna = [
     {num: 57, que: "expensive", true: "caro", false1: "costoso", false2: "elevado"},
 
     // MODERN TECHNOLOGY/SOCIAL MEDIA
-    {num: 58, que: "to take a selfie", true: "sacar selfie", false1: "tomar selfie", false2: "hacer selfie"},
     {num: 59, que: "social media", true: "redes sociales", false1: "medios sociales", false2: "internet social"},
     {num: 60, que: "to post", true: "postear", false1: "publicar", false2: "subir"},
     {num: 61, que: "internet", true: "internet", false1: "la red", false2: "web"},
@@ -713,10 +709,6 @@ const qna = [
     {num: 86, que: "concert", true: "concierto", false1: "show", false2: "presentación"},
     {num: 87, que: "movie", true: "película", false1: "cine", false2: "film"},
     {num: 88, que: "to watch a movie", true: "ver una película", false1: "mirar una película", false2: "observar una película"},
-
-    // SPORTS
-    {num: 89, que: "soccer", true: "fútbol", false1: "balompié", false2: "futbol"},
-    {num: 90, que: "to play sports", true: "hacer deporte", false1: "jugar deporte", false2: "practicar deporte"},
 
     // TECHNOLOGY
     {num: 91, que: "computer", true: "computador", false1: "ordenador", false2: "computadora"},
@@ -794,82 +786,100 @@ const qna = [
     {num: 45, que: "I'm not feeling well", true: "No me siento bien", false1: "Me siento excelente", false2: "Estoy perfecto"},
     {num: 46, que: "How do you feel?", true: "¿Cómo te sientes?", false1: "¿Qué piensas?", false2: "¿Qué haces?"},
 ];
-/* 
+const buttons = ['button1', 'button2', 'button3'];
+let currentquetype 
+let currentchoiceQuestionIndex = 0;
+let currentconjQuestiondex = 0
+let Ranswer = 0
+let Wanswer = 0
+let sentneceque = []
+let threechoiceque = []
+let conjtableque = [{que: "Hablar - To speak",yo: ["hablo", "hablé", "hablaba", "hablaría", "hablaré"],tu: ["hablas", "hablaste", "hablabas", "hablarías", "hablarás"],el: ["habla", "habló", "hablaba", "hablaría", "hablará"],nos: ["hablamos", "hablamos", "hablábamos", "hablaríamos", "hablaremos"],ellos: ["hablan", "hablaron", "hablaban", "hablarían", "hablarán"]}]
 
-*/
-
-let currentQuestionIndex = 0;
-
-document.addEventListener('DOMContentLoaded', function() {
-    setQ(currentQuestionIndex);
-    setupEventListeners();
+document.addEventListener('DOMContentLoaded', function(){shuffleArray(qna);shuffleArray(conjtableque);startfunc();
 });
+if(!Ranswer == 0 ) {document.getElementById('ranswer').innerHTML = Ranswer}
 
-shuffleArray(qna);
+function startfunc(){
+document.getElementById('threechoice').style.display = "none";
+document.getElementById('conjtable').style.display = "none";
+document.getElementById('start').style.display ="";
+document.getElementById('startbtn').addEventListener("click", function(){document.getElementById('start').style.display = 'none'; setTimeout(selectquetype(),1000)})
+}
 
-function setQ(index) {
-    const currentQ = qna[index];
+
+function resetAll (){
+currentchoiceQuestionIndex = 0;
+currentconjQuestiondex = 0
+Ranswer = 0
+Wanswer = 0
+currentquetype = undefined
+document.getElementById('ranswer').innerHTML = Ranswer
+document.getElementById('wanswer').innerHTML = Wanswer
+startfunc()
+}
+
+document.getElementById('startbtntop').onclick  = ()=> resetAll()
+
+function shuffleArray(array){
+    for (let i = array.length - 1; i > 0; i--) {const j = Math.floor(Math.random() * (i + 1));[array[i], array[j]] = [array[j], array[i]];}return array;
+}
+
+function selectquetype(){
+    currentquetype = Math.floor(Math.random() * 10); if (currentquetype < 7 ){dis3choiceque()} else {disconjtableque()};
+    console.log("success?")
+}
+
+function dis3choiceque() {
+const currentQ = qna[currentchoiceQuestionIndex];
+const answers = [currentQ.true, currentQ.false1, currentQ.false2];
+buttons.forEach(btnId => {document.getElementById(btnId).disabled = false;});
+
+    document.getElementById('conjtable').style.display = "none";
+    document.getElementById('threechoice').style.display = "";
     document.getElementById("question").innerHTML = currentQ.que;
     
-    const answers = [currentQ.true, currentQ.false1, currentQ.false2];
     shuffleArray(answers);
     
     document.getElementById("button1").innerHTML = answers[0];
     document.getElementById("button2").innerHTML = answers[1];
     document.getElementById("button3").innerHTML = answers[2];
     
-    // Store correct answer for checking
     document.getElementById("button1").dataset.correct = answers[0] === currentQ.true;
     document.getElementById("button2").dataset.correct = answers[1] === currentQ.true;
     document.getElementById("button3").dataset.correct = answers[2] === currentQ.true;
+    
 }
 
-function setupEventListeners() {
-    document.getElementById("button1").addEventListener("click", function() {
-        checkAnswer(this);
-    });
-    document.getElementById("button2").addEventListener("click", function() {
-        checkAnswer(this);
-    });
-    document.getElementById("button3").addEventListener("click", function() {
-        checkAnswer(this);
-    });
+function checkAnswer(button){
+const buttonbox = document.getElementById("workbox");
+if (button.dataset.correct === "true") {
+buttons.forEach(btnId => {document.getElementById(btnId).disabled = true;});
+workbox.style.backgroundColor = "green";++Ranswer;document.getElementById('ranswer').innerHTML = Ranswer;currentchoiceQuestionIndex++
+setTimeout(function(){selectquetype();
+buttonbox.style.backgroundColor = "";},1500)}
+else {buttonbox.style.backgroundColor = "red"; ++Wanswer; document.getElementById('wanswer').innerHTML = Wanswer
+buttons.forEach(btnId => {document.getElementById(btnId).disabled = true;});
+setTimeout(function() {buttonbox.style.backgroundColor = "";buttons.forEach(btnId => {document.getElementById(btnId).disabled = false;});}, 1500);}
 }
 
-function checkAnswer(button) {
-    const isCorrect = button.dataset.correct === "true";
-    const buttonbox = document.getElementById("workbox");
-
-    if (isCorrect) {
-        workbox.style.backgroundColor = "green";
-        // Move to next question after delay
-        setTimeout(function() {
-            currentQuestionIndex++;
-            if (currentQuestionIndex < qna.length) {
-                setQ(currentQuestionIndex);
-                buttonbox.style.backgroundColor = ""; // Reset color
-            } else {
-                document.getElementById("question").innerHTML = "Quiz Complete! 🎉";
-                buttonbox.innerHTML = "<p>Well done! You finished all questions.</p>";
-            }
-        }, 1000); // Added missing delay parameter
-    } else {
-        buttonbox.style.backgroundColor = "red";
-        // Reset color after short delay
-        setTimeout(function() {
-            buttonbox.style.backgroundColor = "";
-        }, 1000);
-    }
+function disconjtableque(){
+document.getElementById('threechoice').style.display = "none";
+document.getElementById('conjtable').style.display = "";
+let queindex = shuffleArray(conjtableque)[0];
+let alltds = document.getElementsByTagName('td')
+let okhello = [queindex.yo,queindex.tu,queindex.el,queindex.nos,queindex.ellos];
+let blanked = shuffleArray(okhello.flat()); blanked.splice(0,18);
 }
 
-// Helper function to shuffle array (Fisher-Yates algorithm)
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-
+function displayConjTableQuestion() {
+    const pronouns = ['yo', 'tu', 'el', 'nos', 'ellos'];
+    const tenses = 5; 
+    
+    pronouns.forEach(pronoun => {
+        for (let i = 0; i < tenses; i++) {
+            document.querySelector(`#${pronoun} td:nth-child(${i + 1})`).textContent = 
+               conjtableque[pronoun][i];}});
 }
 
 
