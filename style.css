@@ -17,14 +17,13 @@ html, body {
 #workbox{
   margin: 0;
   padding: 0;
-  width: initial;
   width: 100%;
   height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   background-color: blue;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
 }
 .questionbox{
@@ -36,89 +35,111 @@ html, body {
   justify-content: center;
   text-align: center;
 }
-#question{
-font-size: 75px;
+#question1 , #question2 {
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 #choicesbox{
-display: flex;
-justify-content: center;
-align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 #buttonbox{
   display: flex;
   align-items: center;
-  align-content: space-between;
-  margin-top: 150px;
-  width: auto;
+  justify-content: center;
+  margin-top: 80px;
+  width: 100%;
   height: auto;
-  padding: 100px;
+  padding: 40px;
   flex-direction: column;
   flex-wrap: nowrap;
 }
 #startbtn,#button1,#button2,#button3 {
   width: max-content;
-  height: max-content;
-  padding-inline: 450px;
-  padding-block: 50px;
-  margin: 20px;
+  min-width: 300px;
+  height: auto;
+  padding: 25px 60px;
+  margin: 15px;
   border: 1.5px solid;
-  border-radius: 50%;
-  font-size: 50px;
+  border-radius: 50px;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
   text-wrap: wrap;
-  text-align-last: center;
+  text-align: center;
 }
 #conjtablebox{
-display: flex;
-flex-direction: column;
-min-height: 500px;
-min-width: 900px;
-width: auto;
-height: 100%;
-justify-content: center;
-align-items: center;
-padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
 }
-td, th,tr, tbody {
-background-color: antiquewhite;
-font-size: 30px;
-border: 2px green solid;
-padding: 5px;
-padding-top: 20px;
-padding-bottom: 20px;
+td, th, tr, tbody {
+  background-color: antiquewhite;
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  border: 2px green solid;
+  padding: 8px 15px;
 }
 #start{
-background-color: coral;
-width: 100%;
-height: auto;
-justify-content: center;
-align-items: center;
+  background-color: coral;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 #statsnstart{
-display: flex;
-flex-direction: row;
-align-items: center;
-width: auto;
-height: auto;
-
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  height: auto;
+  justify-content: center;
 }
 #startbtntop{
-font-size: 20px;
-height: min-content;
-padding: 10px;
-
+  font-size: 1rem;
+  height: min-content;
+  padding: 10px;
 }
 #ranswer{
-font-size: 20px;
-border: 2px solid darkgreen;
-background-color: green;
-height: min-content;
-padding: 10px;
+  font-size: 1rem;
+  border: 2px solid darkgreen;
+  background-color: green;
+  height: min-content;
+  padding: 10px;
 }
 #wanswer{
-font-size: 20px;
-border: 2px solid darkred;
-background-color: red;
-height: min-content;
-padding: 10px;
+  font-size: 1rem;
+  border: 2px solid darkred;
+  background-color: red;
+  height: min-content;
+  padding: 10px;
+}
+#sentencerem{
+}
+#expbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+#explaination{
+  background-color: aliceblue;
+  padding: 1em;
+  text-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  word-wrap: break-word;
+  line-height: 1.4;
+  border-radius: 12.5px;
 }
