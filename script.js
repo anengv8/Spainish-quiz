@@ -218,146 +218,7 @@ const qna = [
     {num: 198, que: "Imperfect: él/ella (preferir)", true: "prefería", false1: "prefirió", false2: "prefiere"},
     {num: 199, que: "Present: yo (seguir)", true: "sigo", false1: "sigue", false2: "siguen"},
     {num: 200, que: "Future: tú (seguir)", true: "seguirás", false1: "sigues", false2: "seguías"},
- /*   
-    {num: 1, que: "Present: -ar verbs (yo)", true: "o", false1: "a", false2: "e"},
-    {num: 2, que: "Present: -ar verbs (tú)", true: "as", false1: "es", false2: "a"},
-    {num: 3, que: "Present: -ar verbs (él/ella)", true: "a", false1: "e", false2: "an"},
-    {num: 4, que: "Present: -ar verbs (nosotros)", true: "amos", false1: "emos", false2: "imos"},
-    {num: 5, que: "Present: -ar verbs (ellos)", true: "an", false1: "en", false2: "amos"},
-
-    {num: 6, que: "Present: -er verbs (yo)", true: "o", false1: "e", false2: "a"},
-    {num: 7, que: "Present: -er verbs (tú)", true: "es", false1: "as", false2: "e"},
-    {num: 8, que: "Present: -er verbs (él/ella)", true: "e", false1: "a", false2: "en"},
-    {num: 9, que: "Present: -er verbs (nosotros)", true: "emos", false1: "amos", false2: "imos"},
-    {num: 10, que: "Present: -er verbs (ellos)", true: "en", false1: "an", false2: "emos"},
-
-    {num: 11, que: "Present: -ir verbs (yo)", true: "o", false1: "e", false2: "a"},
-    {num: 12, que: "Present: -ir verbs (tú)", true: "es", false1: "as", false2: "e"},
-    {num: 13, que: "Present: -ir verbs (él/ella)", true: "e", false1: "a", false2: "en"},
-    {num: 14, que: "Present: -ir verbs (nosotros)", true: "imos", false1: "amos", false2: "emos"},
-    {num: 15, que: "Present: -ir verbs (ellos)", true: "en", false1: "an", false2: "imos"},
-
-    // PRETERITE TENSE ENDINGS
-    {num: 16, que: "Preterite: -ar verbs (yo)", true: "é", false1: "í", false2: "ó"},
-    {num: 17, que: "Preterite: -ar verbs (tú)", true: "aste", false1: "iste", false2: "asteis"},
-    {num: 18, que: "Preterite: -ar verbs (él/ella)", true: "ó", false1: "ió", false2: "ó"},
-    {num: 19, que: "Preterite: -ar verbs (nosotros)", true: "amos", false1: "imos", false2: "emos"},
-    {num: 20, que: "Preterite: -ar verbs (ellos)", true: "aron", false1: "ieron", false2: "aron"},
-
-    {num: 21, que: "Preterite: -er verbs (yo)", true: "í", false1: "é", false2: "ió"},
-    {num: 22, que: "Preterite: -er verbs (tú)", true: "iste", false1: "aste", false2: "isteis"},
-    {num: 23, que: "Preterite: -er verbs (él/ella)", true: "ió", false1: "ó", false2: "ieron"},
-    {num: 24, que: "Preterite: -er verbs (nosotros)", true: "imos", false1: "amos", false2: "emos"},
-    {num: 25, que: "Preterite: -er verbs (ellos)", true: "ieron", false1: "aron", false2: "ieron"},
-
-    {num: 26, que: "Preterite: -ir verbs (yo)", true: "í", false1: "é", false2: "ió"},
-    {num: 27, que: "Preterite: -ir verbs (tú)", true: "iste", false1: "aste", false2: "isteis"},
-    {num: 28, que: "Preterite: -ir verbs (él/ella)", true: "ió", false1: "ó", false2: "ieron"},
-    {num: 29, que: "Preterite: -ir verbs (nosotros)", true: "imos", false1: "amos", false2: "emos"},
-    {num: 30, que: "Preterite: -ir verbs (ellos)", true: "ieron", false1: "aron", false2: "ieron"},
-
-    // IMPERFECT TENSE ENDINGS
-    {num: 31, que: "Imperfect: -ar verbs (yo)", true: "aba", false1: "ía", false2: "aba"},
-    {num: 32, que: "Imperfect: -ar verbs (tú)", true: "abas", false1: "ías", false2: "abas"},
-    {num: 33, que: "Imperfect: -ar verbs (él/ella)", true: "aba", false1: "ía", false2: "aba"},
-    {num: 34, que: "Imperfect: -ar verbs (nosotros)", true: "ábamos", false1: "íamos", false2: "ábamos"},
-    {num: 35, que: "Imperfect: -ar verbs (ellos)", true: "aban", false1: "ían", false2: "aban"},
-
-    {num: 36, que: "Imperfect: -er verbs (yo)", true: "ía", false1: "aba", false2: "ía"},
-    {num: 37, que: "Imperfect: -er verbs (tú)", true: "ías", false1: "abas", false2: "ías"},
-    {num: 38, que: "Imperfect: -er verbs (él/ella)", true: "ía", false1: "aba", false2: "ía"},
-    {num: 39, que: "Imperfect: -er verbs (nosotros)", true: "íamos", false1: "ábamos", false2: "íamos"},
-    {num: 40, que: "Imperfect: -er verbs (ellos)", true: "ían", false1: "aban", false2: "ían"},
-
-    {num: 41, que: "Imperfect: -ir verbs (yo)", true: "ía", false1: "aba", false2: "ía"},
-    {num: 42, que: "Imperfect: -ir verbs (tú)", true: "ías", false1: "abas", false2: "ías"},
-    {num: 43, que: "Imperfect: -ir verbs (él/ella)", true: "ía", false1: "aba", false2: "ía"},
-    {num: 44, que: "Imperfect: -ir verbs (nosotros)", true: "íamos", false1: "ábamos", false2: "íamos"},
-    {num: 45, que: "Imperfect: -ir verbs (ellos)", true: "ían", false1: "aban", false2: "ían"},
-
-    // FUTURE TENSE ENDINGS (same for all verbs)
-    {num: 46, que: "Future: all verbs (yo)", true: "é", false1: "á", false2: "ás"},
-    {num: 47, que: "Future: all verbs (tú)", true: "ás", false1: "é", false2: "á"},
-    {num: 48, que: "Future: all verbs (él/ella)", true: "á", false1: "é", false2: "ás"},
-    {num: 49, que: "Future: all verbs (nosotros)", true: "emos", false1: "amos", false2: "imos"},
-    {num: 50, que: "Future: all verbs (ellos)", true: "án", false1: "én", false2: "ás"},
-
-    // CONDITIONAL TENSE ENDINGS (same for all verbs)
-    {num: 51, que: "Conditional: all verbs (yo)", true: "ía", false1: "á", false2: "ías"},
-    {num: 52, que: "Conditional: all verbs (tú)", true: "ías", false1: "ás", false2: "ía"},
-    {num: 53, que: "Conditional: all verbs (él/ella)", true: "ía", false1: "á", false2: "ías"},
-    {num: 54, que: "Conditional: all verbs (nosotros)", true: "íamos", false1: "ámos", false2: "emos"},
-    {num: 55, que: "Conditional: all verbs (ellos)", true: "ían", false1: "án", false2: "ías"},
-
-    // PRESENT SUBJUNCTIVE ENDINGS
-    {num: 56, que: "Present Subjunctive: -ar verbs (yo)", true: "e", false1: "a", false2: "o"},
-    {num: 57, que: "Present Subjunctive: -ar verbs (tú)", true: "es", false1: "as", false2: "a"},
-    {num: 58, que: "Present Subjunctive: -ar verbs (él/ella)", true: "e", false1: "a", false2: "en"},
-    {num: 59, que: "Present Subjunctive: -ar verbs (nosotros)", true: "emos", false1: "amos", false2: "imos"},
-    {num: 60, que: "Present Subjunctive: -ar verbs (ellos)", true: "en", false1: "an", false2: "emos"},
-
-    {num: 61, que: "Present Subjunctive: -er verbs (yo)", true: "a", false1: "e", false2: "o"},
-    {num: 62, que: "Present Subjunctive: -er verbs (tú)", true: "as", false1: "es", false2: "a"},
-    {num: 63, que: "Present Subjunctive: -er verbs (él/ella)", true: "a", false1: "e", false2: "an"},
-    {num: 64, que: "Present Subjunctive: -er verbs (nosotros)", true: "amos", false1: "emos", false2: "imos"},
-    {num: 65, que: "Present Subjunctive: -er verbs (ellos)", true: "an", false1: "en", false2: "amos"},
-
-    {num: 66, que: "Present Subjunctive: -ir verbs (yo)", true: "a", false1: "e", false2: "o"},
-    {num: 67, que: "Present Subjunctive: -ir verbs (tú)", true: "as", false1: "es", false2: "a"},
-    {num: 68, que: "Present Subjunctive: -ir verbs (él/ella)", true: "a", false1: "e", false2: "an"},
-    {num: 69, que: "Present Subjunctive: -ir verbs (nosotros)", true: "amos", false1: "emos", false2: "imos"},
-    {num: 70, que: "Present Subjunctive: -ir verbs (ellos)", true: "an", false1: "en", false2: "amos"},
-
-    // PRESENT PARTICIPLE (-ing form)
-    {num: 71, que: "Present Participle: -ar verbs", true: "ando", false1: "iendo", false2: "endo"},
-    {num: 72, que: "Present Participle: -er verbs", true: "iendo", false1: "ando", false2: "endo"},
-    {num: 73, que: "Present Participle: -ir verbs", true: "iendo", false1: "ando", false2: "endo"},
-
-    // PAST PARTICIPLE (-ed form)
-    {num: 74, que: "Past Participle: -ar verbs", true: "ado", false1: "ido", false2: "ando"},
-    {num: 75, que: "Past Participle: -er verbs", true: "ido", false1: "ado", false2: "iendo"},
-    {num: 76, que: "Past Participle: -ir verbs", true: "ido", false1: "ado", false2: "iendo"},
-
-    // AFFIRMATIVE COMMANDS
-    {num: 77, que: "Affirmative Command: -ar verbs (tú)", true: "a", false1: "e", false2: "as"},
-    {num: 78, que: "Affirmative Command: -er verbs (tú)", true: "e", false1: "a", false2: "es"},
-    {num: 79, que: "Affirmative Command: -ir verbs (tú)", true: "e", false1: "a", false2: "es"},
-    {num: 80, que: "Affirmative Command: -ar verbs (usted)", true: "e", false1: "a", false2: "en"},
-    {num: 81, que: "Affirmative Command: -er verbs (usted)", true: "a", false1: "e", false2: "an"},
-
-    // NEGATIVE COMMANDS
-    {num: 82, que: "Negative Command: -ar verbs (tú)", true: "es", false1: "as", false2: "e"},
-    {num: 83, que: "Negative Command: -er verbs (tú)", true: "as", false1: "es", false2: "a"},
-    {num: 84, que: "Negative Command: -ir verbs (tú)", true: "as", false1: "es", false2: "a"},
-
-    // IMPERFECT SUBJUNCTIVE ENDINGS
-    {num: 85, que: "Imperfect Subjunctive: -ar verbs (yo)", true: "ara", false1: "ase", false2: "ara"},
-    {num: 86, que: "Imperfect Subjunctive: -er verbs (yo)", true: "iera", false1: "iese", false2: "ara"},
-    {num: 87, que: "Imperfect Subjunctive: -ir verbs (yo)", true: "iera", false1: "iese", false2: "ara"},
-
-    // FORMAL COMMANDS (USTED/USTEDES)
-    {num: 88, que: "Formal Command: -ar verbs (ustedes)", true: "en", false1: "an", false2: "es"},
-    {num: 89, que: "Formal Command: -er verbs (ustedes)", true: "an", false1: "en", false2: "as"},
-    {num: 90, que: "Formal Command: -ir verbs (ustedes)", true: "an", false1: "en", false2: "as"},
-
-    // NOSOTROS COMMANDS
-    {num: 91, que: "Nosotros Command: -ar verbs", true: "emos", false1: "amos", false2: "emos"},
-    {num: 92, que: "Nosotros Command: -er verbs", true: "amos", false1: "emos", false2: "amos"},
-    {num: 93, que: "Nosotros Command: -ir verbs", true: "amos", false1: "emos", false2: "amos"},
-
-    // STEM-CHANGING PATTERNS (common patterns)
-    {num: 94, que: "Stem-change: e→ie (present tú)", true: "ies", false1: "es", false2: "as"},
-    {num: 95, que: "Stem-change: o→ue (present él)", true: "ue", false1: "o", false2: "a"},
-    {num: 96, que: "Stem-change: e→i (preterite él)", true: "ió", false1: "ió", false2: "ó"},
-
-    // REFLEXIVE ENDINGS
-    {num: 97, que: "Reflexive: -ar verbs (yo present)", true: "o", false1: "me", false2: "se"},
-    {num: 98, que: "Reflexive: -er verbs (tú present)", true: "es", false1: "te", false2: "se"},
-
-    // COMMON IRREGULAR PATTERNS
-    {num: 99, que: "Irregular: ser (yo present)", true: "oy", false1: "o", false2: "oy"},
-    {num: 100, que: "Irregular: ir (yo present)", true: "oy", false1: "o", false2: "oy"},
-   */
+   
     {num: 1, que: "of / from", true: "de", false1: "a", false2: "en"},
     {num: 2, que: "to / at", true: "a", false1: "de", false2: "en"},
     {num: 3, que: "in / on / at", true: "en", false1: "a", false2: "de"},
@@ -785,6 +646,39 @@ const qna = [
     {num: 44, que: "I'm fine", true: "Estoy bien", false1: "Estoy mal", false2: "Estoy regular"},
     {num: 45, que: "I'm not feeling well", true: "No me siento bien", false1: "Me siento excelente", false2: "Estoy perfecto"},
     {num: 46, que: "How do you feel?", true: "¿Cómo te sientes?", false1: "¿Qué piensas?", false2: "¿Qué haces?"},
+    {num: 351, que: "What is the Spanish phrase for 'it's sunny'?", true: "hace sol", false1: "hay sol", false2: "está soleado"},
+    {num: 352, que: "What is the Spanish phrase for 'it's windy'?", true: "hace viento", false1: "hay viento", false2: "está ventoso"},
+    {num: 339, que: "What is the Spanish word for 'shoes'?", true: "zapatos", false1: "zapato", false2: "botas"},
+    {num: 340, que: "What is the Spanish word for 'shirt'?", true: "camisa", false1: "pantalón", false2: "chaqueta"},
+
+// TRANSPORTATION
+    {num: 341, que: "What is the Spanish word for 'car'?", true: "coche", false1: "auto", false2: "carro"},
+    {num: 342, que: "What is the Spanish word for 'bus'?", true: "autobús", false1: "bus", false2: "camión"},
+    {num: 307, que: "What is the Spanish word for 'morning'?", true: "mañana", false1: "tarde", false2: "noche"},
+    {num: 308, que: "What is the Spanish word for 'afternoon'?", true: "tarde", false1: "mañana", false2: "noche"},
+    {num: 309, que: "What is the Spanish word for 'evening/night'?", true: "noche", false1: "tarde", false2: "mañana"},
+    {num: 310, que: "What is the Spanish word for 'week'?", true: "semana", false1: "fin de semana", false2: "mes"},
+    {num: 311, que: "What is the Spanish word for 'weekend'?", true: "fin de semana", false1: "semana", false2: "vacaciones"},
+    {num: 312, que: "What is the Spanish word for 'month'?", true: "mes", false1: "año", false2: "semana"},
+    {num: 313, que: "What is the Spanish word for 'grandmother'?", true: "abuela", false1: "abuelo", false2: "madre"},
+    {num: 314, que: "What is the Spanish word for 'grandfather'?", true: "abuelo", false1: "abuela", false2: "padre"},
+    {num: 315, que: "What is the Spanish word for 'cousin'?", true: "primo/prima", false1: "hermano", false2: "tío"},
+
+// HOUSE AND HOME
+    {num: 316, que: "What is the Spanish word for 'door'?", true: "puerta", false1: "ventana", false2: "pared"},
+    {num: 317, que: "What is the Spanish word for 'window'?", true: "ventana", false1: "puerta", false2: "techo"},
+    {num: 318, que: "What is the Spanish word for 'bed'?", true: "cama", false1: "mesa", false2: "silla"},
+
+// PROFESSIONS
+    {num: 319, que: "What is the Spanish word for 'teacher'?", true: "profesor/profesora", false1: "estudiante", false2: "doctor"},
+    {num: 320, que: "What is the Spanish word for 'doctor'?", true: "médico", false1: "enfermero", false2: "paciente"},
+    {num: 321, que: "What is the Spanish word for 'student'?", true: "estudiante", false1: "profesor", false2: "maestro"},
+
+// WEATHER AND SEASONS
+    {num: 322, que: "What is the Spanish word for 'summer'?", true: "verano", false1: "invierno", false2: "primavera"},
+    {num: 323, que: "What is the Spanish word for 'winter'?", true: "invierno", false1: "verano", false2: "otoño"},
+    {num: 324, que: "What is the Spanish word for 'spring'?", true: "primavera", false1: "otoño", false2: "verano"},
+    {num: 325, que: "What is the Spanish word for 'autumn'?", true: "otoño", false1: "primavera", false2: "invierno"},
 ];
 const conjtableque = [
     {
@@ -1133,5 +1027,6 @@ document.getElementById("question2").innerHTML = sentenceremA[currentsentenceind
 
 
 }
+
 
 
