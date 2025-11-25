@@ -35,7 +35,7 @@ html, body {
   justify-content: center;
   text-align: center;
 }
-#question1 , #question2 {
+#question1 , #question2 , #question3 {
   font-size: clamp(2rem, 5vw, 4rem);
 }
 #choicesbox{
@@ -62,16 +62,16 @@ html, body {
   margin: 15px;
   border: 1.5px solid;
   border-radius: 50px;
-  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-size: clamp(1.7rem, 2.7vw, 2.5rem);
   text-wrap: wrap;
   text-align: center;
 }
 #conjtablebox{
   display: flex;
   flex-direction: column;
-  min-height: 400px;
-  width: 90%;
-  max-width: 1000px;
+  min-height: 500px;
+  width: 95%;
+  max-width: 1100px;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -79,10 +79,12 @@ html, body {
   margin: 0 auto;
 }
 td, th, tr, tbody {
-  background-color: antiquewhite;
-  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  background-color: aliceblue;
+  font-size: clamp(1.8rem, 2.4vw, 2.1rem);
   border: 2px green solid;
-  padding: 8px 15px;
+  padding: 10px 15px;
+  letter-spacing: 0.1rem;
+
 }
 #start{
   background-color: coral;
@@ -138,8 +140,39 @@ td, th, tr, tbody {
   width: 90%;
   max-width: 1000px;
   height: auto;
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
   word-wrap: break-word;
   line-height: 1.4;
   border-radius: 12.5px;
+  border: 2px green solid;
+letter-spacing: 0.12rem;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+word-spacing: 0.5rem;
+}
+#examplepbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+#example{
+    background-color: aliceblue;
+  padding: 1em;
+  text-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  word-wrap: break-word;
+  line-height: 1.4;
+  border-radius: 12.5px;
+  border: 2px green solid;
+letter-spacing: 0.12rem;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+word-spacing: 0.5 rem;
 }
