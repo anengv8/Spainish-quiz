@@ -1,5 +1,5 @@
 const qna = [
-    {num: 1, que: "to speak", true: "hablar", false1: "comer", false2: "vivir"},
+    /*{num: 1, que: "to speak", true: "hablar", false1: "comer", false2: "vivir"},
     {num: 2, que: "to eat", true: "comer", false1: "beber", false2: "correr"},
     {num: 3, que: "to live", true: "vivir", false1: "trabajar", false2: "estudiar"},
     {num: 4, que: "to be (permanent)", true: "ser", false1: "estar", false2: "tener"},
@@ -99,126 +99,7 @@ const qna = [
     {num: 98, que: "to send", true: "enviar", false1: "mandar", false2: "dar"},
     {num: 99, que: "to receive", true: "recibir", false1: "tomar", false2: "dar"},
     {num: 100, que: "to offer", true: "ofrecer", false1: "dar", false2: "recibir"},
-
-    // Second 100: Verb Tenses (focusing on most common verbs)
-    // Present Tense
-    {num: 101, que: "Present: yo (hablar)", true: "hablo", false1: "habla", false2: "hablan"},
-    {num: 102, que: "Present: tú (comer)", true: "comes", false1: "come", false2: "comemos"},
-    {num: 103, que: "Present: él/ella (vivir)", true: "vive", false1: "vivo", false2: "vives"},
-    {num: 104, que: "Present: nosotros (ser)", true: "somos", false1: "sois", false2: "son"},
-    {num: 105, que: "Present: ellos (tener)", true: "tienen", false1: "tenemos", false2: "tengo"},
-    {num: 106, que: "Present: yo (hacer)", true: "hago", false1: "hace", false2: "hacen"},
-    {num: 107, que: "Present: tú (ir)", true: "vas", false1: "va", false2: "voy"},
-    {num: 108, que: "Present: yo (ver)", true: "veo", false1: "ves", false2: "ven"},
-    {num: 109, que: "Present: él/ella (decir)", true: "dice", false1: "digo", false2: "dicen"},
-    {num: 110, que: "Present: yo (querer)", true: "quiero", false1: "quiere", false2: "quieren"},
-
-    // Preterite (Past Simple)
-    {num: 111, que: "Preterite: yo (hablar)", true: "hablé", false1: "hablaba", false2: "hablo"},
-    {num: 112, que: "Preterite: tú (comer)", true: "comiste", false1: "comías", false2: "comes"},
-    {num: 113, que: "Preterite: él/ella (vivir)", true: "vivió", false1: "vivía", false2: "vive"},
-    {num: 114, que: "Preterite: nosotros (ser)", true: "fuimos", false1: "éramos", false2: "somos"},
-    {num: 115, que: "Preterite: ellos (tener)", true: "tuvieron", false1: "tenían", false2: "tienen"},
-    {num: 116, que: "Preterite: yo (hacer)", true: "hice", false1: "hacía", false2: "hago"},
-    {num: 117, que: "Preterite: tú (ir)", true: "fuiste", false1: "ibas", false2: "vas"},
-    {num: 118, que: "Preterite: él/ella (ver)", true: "vio", false1: "veía", false2: "ve"},
-    {num: 119, que: "Preterite: yo (decir)", true: "dije", false1: "decía", false2: "digo"},
-    {num: 120, que: "Preterite: tú (querer)", true: "quisiste", false1: "querías", false2: "quieres"},
-
-    // Imperfect
-    {num: 121, que: "Imperfect: yo (hablar)", true: "hablaba", false1: "hablé", false2: "hablo"},
-    {num: 122, que: "Imperfect: tú (comer)", true: "comías", false1: "comiste", false2: "comes"},
-    {num: 123, que: "Imperfect: él/ella (vivir)", true: "vivía", false1: "vivió", false2: "vive"},
-    {num: 124, que: "Imperfect: nosotros (ser)", true: "éramos", false1: "fuimos", false2: "somos"},
-    {num: 125, que: "Imperfect: ellos (tener)", true: "tenían", false1: "tuvieron", false2: "tienen"},
-    {num: 126, que: "Imperfect: yo (hacer)", true: "hacía", false1: "hice", false2: "hago"},
-    {num: 127, que: "Imperfect: tú (ir)", true: "ibas", false1: "fuiste", false2: "vas"},
-    {num: 128, que: "Imperfect: él/ella (ver)", true: "veía", false1: "vio", false2: "ve"},
-    {num: 129, que: "Imperfect: yo (decir)", true: "decía", false1: "dije", false2: "digo"},
-    {num: 130, que: "Imperfect: tú (querer)", true: "querías", false1: "quisiste", false2: "quieres"},
-
-    // Future
-    {num: 131, que: "Future: yo (hablar)", true: "hablaré", false1: "hablo", false2: "hablaba"},
-    {num: 132, que: "Future: tú (comer)", true: "comerás", false1: "comes", false2: "comías"},
-    {num: 133, que: "Future: él/ella (vivir)", true: "vivirá", false1: "vive", false2: "vivía"},
-    {num: 134, que: "Future: nosotros (ser)", true: "seremos", false1: "somos", false2: "éramos"},
-    {num: 135, que: "Future: ellos (tener)", true: "tendrán", false1: "tienen", false2: "tenían"},
-    {num: 136, que: "Future: yo (hacer)", true: "haré", false1: "hago", false2: "hacía"},
-    {num: 137, que: "Future: tú (ir)", true: "irás", false1: "vas", false2: "ibas"},
-    {num: 138, que: "Future: él/ella (ver)", true: "verá", false1: "ve", false2: "veía"},
-    {num: 139, que: "Future: yo (decir)", true: "diré", false1: "digo", false2: "decía"},
-    {num: 140, que: "Future: tú (querer)", true: "querrás", false1: "quieres", false2: "querías"},
-
-    // Conditional
-    {num: 141, que: "Conditional: yo (hablar)", true: "hablaría", false1: "hablo", false2: "hablaré"},
-    {num: 142, que: "Conditional: tú (comer)", true: "comerías", false1: "comes", false2: "comerás"},
-    {num: 143, que: "Conditional: él/ella (vivir)", true: "viviría", false1: "vive", false2: "vivirá"},
-    {num: 144, que: "Conditional: nosotros (ser)", true: "seríamos", false1: "somos", false2: "seremos"},
-    {num: 145, que: "Conditional: ellos (tener)", true: "tendrían", false1: "tienen", false2: "tendrán"},
-    {num: 146, que: "Conditional: yo (hacer)", true: "haría", false1: "hago", false2: "haré"},
-    {num: 147, que: "Conditional: tú (ir)", true: "irías", false1: "vas", false2: "irás"},
-    {num: 148, que: "Conditional: él/ella (ver)", true: "vería", false1: "ve", false2: "verá"},
-    {num: 149, que: "Conditional: yo (decir)", true: "diría", false1: "digo", false2: "diré"},
-    {num: 150, que: "Conditional: tú (querer)", true: "querrías", false1: "quieres", false2: "querrás"},
-
-    // Present Subjunctive
-    {num: 151, que: "Subjunctive: yo (hablar)", true: "hable", false1: "hablo", false2: "hablé"},
-    {num: 152, que: "Subjunctive: tú (comer)", true: "comas", false1: "comes", false2: "comiste"},
-    {num: 153, que: "Subjunctive: él/ella (vivir)", true: "viva", false1: "vive", false2: "vivió"},
-    {num: 154, que: "Subjunctive: nosotros (ser)", true: "seamos", false1: "somos", false2: "fuimos"},
-    {num: 155, que: "Subjunctive: ellos (tener)", true: "tengan", false1: "tienen", false2: "tuvieron"},
-    {num: 156, que: "Subjunctive: yo (hacer)", true: "haga", false1: "hago", false2: "hice"},
-    {num: 157, que: "Subjunctive: tú (ir)", true: "vayas", false1: "vas", false2: "fuiste"},
-    {num: 158, que: "Subjunctive: él/ella (ver)", true: "vea", false1: "ve", false2: "vio"},
-    {num: 159, que: "Subjunctive: yo (decir)", true: "diga", false1: "digo", false2: "dije"},
-    {num: 160, que: "Subjunctive: tú (querer)", true: "quieras", false1: "quieres", false2: "quisiste"},
-
-    // More mixed tenses for important verbs
-    {num: 161, que: "Present: yo (poder)", true: "puedo", false1: "puede", false2: "pueden"},
-    {num: 162, que: "Preterite: él/ella (poder)", true: "pudo", false1: "podía", false2: "puede"},
-    {num: 163, que: "Present: tú (saber)", true: "sabes", false1: "sabe", false2: "saben"},
-    {num: 164, que: "Preterite: yo (saber)", true: "supe", false1: "sabía", false2: "sé"},
-    {num: 165, que: "Present: él/ella (poner)", true: "pone", false1: "pono", false2: "ponen"},
-    {num: 166, que: "Preterite: tú (poner)", true: "pusiste", false1: "ponías", false2: "pones"},
-    {num: 167, que: "Present: yo (salir)", true: "salgo", false1: "salo", false2: "sale"},
-    {num: 168, que: "Future: él/ella (salir)", true: "saldrá", false1: "sale", false2: "salía"},
-    {num: 169, que: "Present: tú (venir)", true: "vienes", false1: "viene", false2: "vienen"},
-    {num: 170, que: "Preterite: yo (venir)", true: "vine", false1: "venía", false2: "vengo"},
-
-    // Additional important verb tenses
-    {num: 171, que: "Present: él/ella (conocer)", true: "conoce", false1: "conozco", false2: "conocen"},
-    {num: 172, que: "Preterite: tú (conocer)", true: "conociste", false1: "conocías", false2: "conoces"},
-    {num: 173, que: "Present: yo (dar)", true: "doy", false1: "da", false2: "dan"},
-    {num: 174, que: "Imperfect: él/ella (dar)", true: "daba", false1: "dio", false2: "da"},
-    {num: 175, que: "Present: tú (estar)", true: "estás", false1: "está", false2: "están"},
-    {num: 176, que: "Preterite: él/ella (estar)", true: "estuvo", false1: "estaba", false2: "está"},
-    {num: 177, que: "Present: yo (pensar)", true: "pienso", false1: "piensa", false2: "piensan"},
-    {num: 178, que: "Future: tú (pensar)", true: "pensarás", false1: "piensas", false2: "pensabas"},
-    {num: 179, que: "Present: él/ella (encontrar)", true: "encuentra", false1: "encuentro", false2: "encuentran"},
-    {num: 180, que: "Preterite: yo (encontrar)", true: "encontré", false1: "encontraba", false2: "encuentro"},
-
-    // Last 20 mixed tense questions
-    {num: 181, que: "Present: nosotros (volver)", true: "volvemos", false1: "volvimos", false2: "volveremos"},
-    {num: 182, que: "Preterite: ellos (volver)", true: "volvieron", false1: "volvían", false2: "vuelven"},
-    {num: 183, que: "Present: yo (pedir)", true: "pido", false1: "pide", false2: "piden"},
-    {num: 184, que: "Imperfect: tú (pedir)", true: "pedías", false1: "pediste", false2: "pides"},
-    {num: 185, que: "Present: él/ella (sentir)", true: "siente", false1: "siento", false2: "sienten"},
-    {num: 186, que: "Future: yo (sentir)", true: "sentiré", false1: "siento", false2: "sentía"},
-    {num: 187, que: "Present: tú (dormir)", true: "duermes", false1: "duerme", false2: "duermen"},
-    {num: 188, que: "Preterite: él/ella (dormir)", true: "durmió", false1: "dormía", false2: "duerme"},
-    {num: 189, que: "Present: yo (jugar)", true: "juego", false1: "juega", false2: "juegan"},
-    {num: 190, que: "Imperfect: tú (jugar)", true: "jugabas", false1: "jugaste", false2: "juegas"},
-    {num: 191, que: "Present: él/ella (empezar)", true: "empieza", false1: "empiezo", false2: "empiezan"},
-    {num: 192, que: "Future: nosotros (empezar)", true: "empezaremos", false1: "empezamos", false2: "empezábamos"},
-    {num: 193, que: "Present: yo (entender)", true: "entiendo", false1: "entiende", false2: "entienden"},
-    {num: 194, que: "Preterite: tú (entender)", true: "entendiste", false1: "entendías", false2: "entiendes"},
-    {num: 195, que: "Present: él/ella (perder)", true: "pierde", false1: "pierdo", false2: "pierden"},
-    {num: 196, que: "Conditional: yo (perder)", true: "perdería", false1: "pierdo", false2: "perderé"},
-    {num: 197, que: "Present: tú (preferir)", true: "prefieres", false1: "prefiere", false2: "prefieren"},
-    {num: 198, que: "Imperfect: él/ella (preferir)", true: "prefería", false1: "prefirió", false2: "prefiere"},
-    {num: 199, que: "Present: yo (seguir)", true: "sigo", false1: "sigue", false2: "siguen"},
-    {num: 200, que: "Future: tú (seguir)", true: "seguirás", false1: "sigues", false2: "seguías"},
-   
+    */
     {num: 1, que: "of / from", true: "de", false1: "a", false2: "en"},
     {num: 2, que: "to / at", true: "a", false1: "de", false2: "en"},
     {num: 3, que: "in / on / at", true: "en", false1: "a", false2: "de"},
@@ -646,39 +527,6 @@ const qna = [
     {num: 44, que: "I'm fine", true: "Estoy bien", false1: "Estoy mal", false2: "Estoy regular"},
     {num: 45, que: "I'm not feeling well", true: "No me siento bien", false1: "Me siento excelente", false2: "Estoy perfecto"},
     {num: 46, que: "How do you feel?", true: "¿Cómo te sientes?", false1: "¿Qué piensas?", false2: "¿Qué haces?"},
-    {num: 351, que: "What is the Spanish phrase for 'it's sunny'?", true: "hace sol", false1: "hay sol", false2: "está soleado"},
-    {num: 352, que: "What is the Spanish phrase for 'it's windy'?", true: "hace viento", false1: "hay viento", false2: "está ventoso"},
-    {num: 339, que: "What is the Spanish word for 'shoes'?", true: "zapatos", false1: "zapato", false2: "botas"},
-    {num: 340, que: "What is the Spanish word for 'shirt'?", true: "camisa", false1: "pantalón", false2: "chaqueta"},
-
-// TRANSPORTATION
-    {num: 341, que: "What is the Spanish word for 'car'?", true: "coche", false1: "auto", false2: "carro"},
-    {num: 342, que: "What is the Spanish word for 'bus'?", true: "autobús", false1: "bus", false2: "camión"},
-    {num: 307, que: "What is the Spanish word for 'morning'?", true: "mañana", false1: "tarde", false2: "noche"},
-    {num: 308, que: "What is the Spanish word for 'afternoon'?", true: "tarde", false1: "mañana", false2: "noche"},
-    {num: 309, que: "What is the Spanish word for 'evening/night'?", true: "noche", false1: "tarde", false2: "mañana"},
-    {num: 310, que: "What is the Spanish word for 'week'?", true: "semana", false1: "fin de semana", false2: "mes"},
-    {num: 311, que: "What is the Spanish word for 'weekend'?", true: "fin de semana", false1: "semana", false2: "vacaciones"},
-    {num: 312, que: "What is the Spanish word for 'month'?", true: "mes", false1: "año", false2: "semana"},
-    {num: 313, que: "What is the Spanish word for 'grandmother'?", true: "abuela", false1: "abuelo", false2: "madre"},
-    {num: 314, que: "What is the Spanish word for 'grandfather'?", true: "abuelo", false1: "abuela", false2: "padre"},
-    {num: 315, que: "What is the Spanish word for 'cousin'?", true: "primo/prima", false1: "hermano", false2: "tío"},
-
-// HOUSE AND HOME
-    {num: 316, que: "What is the Spanish word for 'door'?", true: "puerta", false1: "ventana", false2: "pared"},
-    {num: 317, que: "What is the Spanish word for 'window'?", true: "ventana", false1: "puerta", false2: "techo"},
-    {num: 318, que: "What is the Spanish word for 'bed'?", true: "cama", false1: "mesa", false2: "silla"},
-
-// PROFESSIONS
-    {num: 319, que: "What is the Spanish word for 'teacher'?", true: "profesor/profesora", false1: "estudiante", false2: "doctor"},
-    {num: 320, que: "What is the Spanish word for 'doctor'?", true: "médico", false1: "enfermero", false2: "paciente"},
-    {num: 321, que: "What is the Spanish word for 'student'?", true: "estudiante", false1: "profesor", false2: "maestro"},
-
-// WEATHER AND SEASONS
-    {num: 322, que: "What is the Spanish word for 'summer'?", true: "verano", false1: "invierno", false2: "primavera"},
-    {num: 323, que: "What is the Spanish word for 'winter'?", true: "invierno", false1: "verano", false2: "otoño"},
-    {num: 324, que: "What is the Spanish word for 'spring'?", true: "primavera", false1: "otoño", false2: "verano"},
-    {num: 325, que: "What is the Spanish word for 'autumn'?", true: "otoño", false1: "primavera", false2: "invierno"},
 ];
 const conjtableque = [
     {
@@ -687,127 +535,335 @@ const conjtableque = [
     tu: ["hablas", "hablaste", "hablabas", "hablarías", "hablarás"],
     el: ["habla", "habló", "hablaba", "hablaría", "hablará"],
     nos: ["hablamos", "hablamos", "hablábamos", "hablaríamos", "hablaremos"],
-    ellos: ["hablan", "hablaron", "hablaban", "hablarían", "hablarán"]},
+    ellos: ["hablan", "hablaron", "hablaban", "hablarían", "hablarán"],
+    example: "Yo hablo español (I speak Spanish - present). Ayer hablé con María (Yesterday I spoke with María - completed past). Cuando era niño, hablaba más (When I was a child, I used to speak more - ongoing past). Si tuviera tiempo, hablaría contigo (If I had time, I would speak with you - conditional). Mañana hablaré en la reunión (Tomorrow I will speak at the meeting - future)."
+    },
     {
     que: "Comer - To eat",
     yo: ["como", "comí", "comía", "comería", "comeré"],
     tu: ["comes", "comiste", "comías", "comerías", "comerás"],
     el: ["come", "comió", "comía", "comería", "comerá"],
     nos: ["comemos", "comimos", "comíamos", "comeríamos", "comeremos"],
-    ellos: ["comen", "comieron", "comían", "comerían", "comerán"]
-  },
-  {
-    que: "Vivir - To live",
-    yo: ["vivo", "viví", "vivía", "viviría", "viviré"],
-    tu: ["vives", "viviste", "vivías", "vivirías", "vivirás"],
-    el: ["vive", "vivió", "vivía", "viviría", "vivirá"],
-    nos: ["vivimos", "vivimos", "vivíamos", "viviríamos", "viviremos"],
-    ellos: ["viven", "vivieron", "vivían", "vivirían", "vivirán"]
-  },
-  {
+    ellos: ["comen", "comieron", "comían", "comerían", "comerán"],
+    example: "Como frutas todos los días (I eat fruits every day - habitual). Comí pizza ayer (I ate pizza yesterday - specific past). De niño comía muchos dulces (As a child I used to eat many sweets - past habit). Si tuviera hambre, comería algo (If I were hungry, I would eat something - hypothetical). Mañana comeré temprano (Tomorrow I will eat early - future plan)."
+    },
+    {
+    que: "Venir - To come",
+    yo: ["vengo", "vine", "venía", "vendría", "vendré"],
+    tu: ["vienes", "viniste", "venías", "vendrías", "vendrás"],
+    el: ["viene", "vino", "venía", "vendría", "vendrá"],
+    nos: ["venimos", "vinimos", "veníamos", "vendríamos", "vendremos"],
+    ellos: ["vienen", "vinieron", "venían", "vendrían", "vendrán"],
+    example: "Vengo de Chile (I come from Chile - origin). Vine ayer (I came yesterday - completed). Venía todos los días (I used to come every day - past routine). Si me invitaras, vendría (If you invited me, I would come - conditional). Vendré mañana (I will come tomorrow - future)."
+    },
+    {
+    que: "Poner - To put",
+    yo: ["pongo", "puse", "ponía", "pondría", "pondré"],
+    tu: ["pones", "pusiste", "ponías", "pondrías", "pondrás"],
+    el: ["pone", "puso", "ponía", "pondría", "pondrá"],
+    nos: ["ponemos", "pusimos", "poníamos", "pondríamos", "pondremos"],
+    ellos: ["ponen", "pusieron", "ponían", "pondrían", "pondrán"],
+    example: "Pongo la mesa (I set the table - present). Puse el libro ahí (I put the book there - specific past). Ponía atención en clase (I used to pay attention in class - past habit). Si pudiera, pondría más esfuerzo (If I could, I would put more effort - conditional). Pondré las llaves aquí (I will put the keys here - future)."
+    },
+    {
+    que: "Salir - To leave/go out",
+    yo: ["salgo", "salí", "salía", "saldría", "saldré"],
+    tu: ["sales", "saliste", "salías", "saldrías", "saldrás"],
+    el: ["sale", "salió", "salía", "saldría", "saldrá"],
+    nos: ["salimos", "salimos", "salíamos", "saldríamos", "saldremos"],
+    ellos: ["salen", "salieron", "salían", "saldrían", "saldrán"],
+    example: "Salgo con amigos (I go out with friends - present). Salí temprano (I left early - completed). Salía los fines de semana (I used to go out on weekends - past routine). Si tuviera tiempo, saldría más (If I had time, I would go out more - conditional). Saldré a las ocho (I will leave at eight - future)."
+    },
+    {
+    que: "Traer - To bring",
+    yo: ["traigo", "traje", "traía", "traería", "traeré"],
+    tu: ["traes", "trajiste", "traías", "traerías", "traerás"],
+    el: ["trae", "trajo", "traía", "traería", "traerá"],
+    nos: ["traemos", "trajimos", "traíamos", "traeríamos", "traeremos"],
+    ellos: ["traen", "trajeron", "traían", "traerían", "traerán"],
+    example: "Traigo el regalo (I bring the gift - present). Traje la comida (I brought the food - completed). Traía flores cada día (I used to bring flowers every day - past habit). Si vinieras, traería vino (If you came, I would bring wine - conditional). Traeré los documentos (I will bring the documents - future)."
+    },
+    {
+    que: "Conocer - To know (people/places)",
+    yo: ["conozco", "conocí", "conocía", "conocería", "conoceré"],
+    tu: ["conoces", "conociste", "conocías", "conocerías", "conocerás"],
+    el: ["conoce", "conoció", "conocía", "conocería", "conocerá"],
+    nos: ["conocemos", "conocimos", "conocíamos", "conoceríamos", "conoceremos"],
+    ellos: ["conocen", "conocieron", "conocían", "conocerían", "conocerán"],
+    example: "Conozco Madrid (I know Madrid - familiarity). Conocí a Juan ayer (I met Juan yesterday - first meeting). Conocía ese restaurante (I knew that restaurant - past familiarity). Si viajara, conocería más países (If I traveled, I would know more countries - conditional). Conoceré a tu familia (I will meet your family - future)."
+    },
+    {
+    que: "Pedir - To ask for/order",
+    yo: ["pido", "pedí", "pedía", "pediría", "pediré"],
+    tu: ["pides", "pediste", "pedías", "pedirías", "pedirás"],
+    el: ["pide", "pidió", "pedía", "pediría", "pedirá"],
+    nos: ["pedimos", "pedimos", "pedíamos", "pediríamos", "pediremos"],
+    ellos: ["piden", "pidieron", "pedían", "pedirían", "pedirán"],
+    example: "Pido ayuda (I ask for help - present). Pedí pizza (I ordered pizza - completed). Pedía lo mismo siempre (I used to order the same thing always - past habit). Si tuviera hambre, pediría comida (If I were hungry, I would order food - conditional). Pediré la cuenta (I will ask for the bill - future)."
+    },
+    {
+    que: "Seguir - To follow/continue",
+    yo: ["sigo", "seguí", "seguía", "seguiría", "seguiré"],
+    tu: ["sigues", "seguiste", "seguías", "seguirías", "seguirás"],
+    el: ["sigue", "siguió", "seguía", "seguiría", "seguirá"],
+    nos: ["seguimos", "seguimos", "seguíamos", "seguiríamos", "seguiremos"],
+    ellos: ["siguen", "siguieron", "seguían", "seguirían", "seguirán"],
+    example: "Sigo las instrucciones (I follow the instructions - present). Seguí el camino (I followed the path - completed). Seguía estudiando (I kept studying - ongoing past). Si me explicaras, seguiría mejor (If you explained, I would follow better - conditional). Seguiré trabajando (I will keep working - future)."
+    },
+    {
+    que: "Encontrar - To find",
+    yo: ["encuentro", "encontré", "encontraba", "encontraría", "encontraré"],
+    tu: ["encuentras", "encontraste", "encontrabas", "encontrarías", "encontrarás"],
+    el: ["encuentra", "encontró", "encontraba", "encontraría", "encontrará"],
+    nos: ["encontramos", "encontramos", "encontrábamos", "encontraríamos", "encontraremos"],
+    ellos: ["encuentran", "encontraron", "encontraban", "encontrarían", "encontrarán"],
+    example: "Encuentro las llaves (I find the keys - present). Encontré un tesoro (I found a treasure - completed). Encontraba monedas en la calle (I used to find coins on the street - past habit). Si buscara, encontraría algo (If I searched, I would find something - conditional). Encontraré solución (I will find a solution - future)."
+    },
+    {
+    que: "Pensar - To think",
+    yo: ["pienso", "pensé", "pensaba", "pensaría", "pensaré"],
+    tu: ["piensas", "pensaste", "pensabas", "pensarías", "pensarás"],
+    el: ["piensa", "pensó", "pensaba", "pensaría", "pensará"],
+    nos: ["pensamos", "pensamos", "pensábamos", "pensaríamos", "pensaremos"],
+    ellos: ["piensan", "pensaron", "pensaban", "pensarían", "pensarán"],
+    example: "Pienso en ti (I think about you - present). Pensé que vendrías (I thought you would come - completed past thought). Pensaba mucho antes (I used to think a lot before - past habit). Si tuviera tiempo, pensaría más (If I had time, I would think more - conditional). Pensaré en la respuesta (I will think about the answer - future)."
+    },
+    {
+    que: "Perder - To lose",
+    yo: ["pierdo", "perdí", "perdía", "perdería", "perderé"],
+    tu: ["pierdes", "perdiste", "perdías", "perderías", "perderás"],
+    el: ["pierde", "perdió", "perdía", "perdería", "perderá"],
+    nos: ["perdemos", "perdimos", "perdíamos", "perderíamos", "perderemos"],
+    ellos: ["pierden", "perdieron", "perdían", "perderían", "perderán"],
+    example: "Pierdo el tiempo (I waste time - present). Perdí el autobús (I missed the bus - completed). Perdía siempre las llaves (I used to always lose my keys - past habit). Si no tuviera cuidado, perdería todo (If I weren't careful, I would lose everything - conditional). Perderé peso (I will lose weight - future)."
+    },
+    {
+    que: "Entender - To understand",
+    yo: ["entiendo", "entendí", "entendía", "entendería", "entenderé"],
+    tu: ["entiendes", "entendiste", "entendías", "entenderías", "entenderás"],
+    el: ["entiende", "entendió", "entendía", "entendería", "entenderá"],
+    nos: ["entendemos", "entendimos", "entendíamos", "entenderíamos", "entenderemos"],
+    ellos: ["entienden", "entendieron", "entendían", "entenderían", "entenderán"],
+    example: "Entiendo español (I understand Spanish - present ability). Entendí la lección (I understood the lesson - completed). Entendía mejor antes (I used to understand better before - past ability). Si me explicaras, entendería (If you explained, I would understand - conditional). Entenderé con práctica (I will understand with practice - future)."
+    },
+    {
+    que: "Cerrar - To close",
+    yo: ["cierro", "cerré", "cerraba", "cerraría", "cerraré"],
+    tu: ["cierras", "cerraste", "cerrabas", "cerrarías", "cerrarás"],
+    el: ["cierra", "cerró", "cerraba", "cerraría", "cerrará"],
+    nos: ["cerramos", "cerramos", "cerrábamos", "cerraríamos", "cerraremos"],
+    ellos: ["cierran", "cerraron", "cerraban", "cerrarían", "cerrarán"],
+    example: "Cierro la puerta (I close the door - present). Cerré la ventana (I closed the window - completed). Cerraba la tienda a las 8 (I used to close the store at 8 - past routine). Si hiciera frío, cerraría todo (If it were cold, I would close everything - conditional). Cerraré el local (I will close the shop - future)."
+    },
+    {
+    que: "Volver - To return",
+    yo: ["vuelvo", "volví", "volvía", "volvería", "volveré"],
+    tu: ["vuelves", "volviste", "volvías", "volverías", "volverás"],
+    el: ["vuelve", "volvió", "volvía", "volvería", "volverá"],
+    nos: ["volvemos", "volvimos", "volvíamos", "volveríamos", "volveremos"],
+    ellos: ["vuelven", "volvieron", "volvían", "volverían", "volverán"],
+    example: "Vuelvo a casa (I return home - present). Volví anoche (I returned last night - completed). Volvía tarde del trabajo (I used to return late from work - past routine). Si pudiera, volvería a mi país (If I could, I would return to my country - conditional). Volveré mañana (I will return tomorrow - future)."
+    },
+    {
+    que: "Dormir - To sleep",
+    yo: ["duermo", "dormí", "dormía", "dormiría", "dormiré"],
+    tu: ["duermes", "dormiste", "dormías", "dormirías", "dormirás"],
+    el: ["duerme", "durmió", "dormía", "dormiría", "dormirá"],
+    nos: ["dormimos", "dormimos", "dormíamos", "dormiríamos", "dormiremos"],
+    ellos: ["duermen", "durmieron", "dormían", "dormirían", "dormirán"],
+    example: "Duermo ocho horas (I sleep eight hours - present). Dormí bien anoche (I slept well last night - completed). Dormía la siesta (I used to take naps - past habit). Si estuviera cansado, dormiría más (If I were tired, I would sleep more - conditional). Dormiré temprano (I will sleep early - future)."
+    },
+    {
+    que: "Morir - To die",
+    yo: ["muero", "morí", "moría", "moriría", "moriré"],
+    tu: ["mueres", "moriste", "morías", "morirías", "morirás"],
+    el: ["muere", "murió", "moría", "moriría", "morirá"],
+    nos: ["morimos", "morimos", "moríamos", "moriríamos", "moriremos"],
+    ellos: ["mueren", "murieron", "morían", "morirían", "morirán"],
+    example: "Me muero de hambre (I'm dying of hunger - exaggerated present). Murió el año pasado (He died last year - completed). Moría mucha gente (Many people used to die - past statistic). Si no tuviera cuidado, moriría (If I weren't careful, I would die - conditional). Moriré viejo (I will die old - future)."
+    },
+    {
+    que: "Sentir - To feel",
+    yo: ["siento", "sentí", "sentía", "sentiría", "sentiré"],
+    tu: ["sientes", "sentiste", "sentías", "sentirías", "sentirás"],
+    el: ["siente", "sintió", "sentía", "sentiría", "sentirá"],
+    nos: ["sentimos", "sentimos", "sentíamos", "sentiríamos", "sentiremos"],
+    ellos: ["sienten", "sintieron", "sentían", "sentirían", "sentirán"],
+    example: "Siento frío (I feel cold - present sensation). Sentí alegría (I felt joy - completed feeling). Sentía miedo (I used to feel fear - past emotion). Si me pasara, sentiría lo mismo (If it happened to me, I would feel the same - conditional). Sentiré nostalgia (I will feel nostalgia - future)."
+    },
+    {
+    que: "Jugar - To play",
+    yo: ["juego", "jugué", "jugaba", "jugaría", "jugaré"],
+    tu: ["juegas", "jugaste", "jugabas", "jugarías", "jugarás"],
+    el: ["juega", "jugó", "jugaba", "jugaría", "jugará"],
+    nos: ["jugamos", "jugamos", "jugábamos", "jugaríamos", "jugaremos"],
+    ellos: ["juegan", "jugaron", "jugaban", "jugarían", "jugarán"],
+    example: "Juego fútbol (I play soccer - present). Jugué ayer (I played yesterday - completed). Jugaba en el parque (I used to play in the park - childhood memory). Si tuviera tiempo, jugaría más (If I had time, I would play more - conditional). Jugaré mañana (I will play tomorrow - future)."
+    },
+    {
+    que: "Leer - To read",
+    yo: ["leo", "leí", "leía", "leería", "leeré"],
+    tu: ["lees", "leíste", "leías", "leerías", "leerás"],
+    el: ["lee", "leyó", "leía", "leería", "leerá"],
+    nos: ["leemos", "leímos", "leíamos", "leeríamos", "leeremos"],
+    ellos: ["leen", "leyeron", "leían", "leerían", "leerán"],
+    example: "Leo un libro (I read a book - present). Leí el periódico (I read the newspaper - completed). Leía cuentos (I used to read stories - past habit). Si tuviera libros, leería más (If I had books, I would read more - conditional). Leeré esta noche (I will read tonight - future)."
+    },
+    {
+    que: "Necesitar - To need",
+    yo: ["necesito", "necesité", "necesitaba", "necesitaría", "necesitaré"],
+    tu: ["necesitas", "necesitaste", "necesitabas", "necesitarías", "necesitarás"],
+    el: ["necesita", "necesitó", "necesitaba", "necesitaría", "necesitará"],
+    nos: ["necesitamos", "necesitamos", "necesitábamos", "necesitaríamos", "necesitaremos"],
+    ellos: ["necesitan", "necesitaron", "necesitaban", "necesitarían", "necesitarán"],
+    example: "Necesito ayuda (I need help - urgent present). Necesité dinero ayer (I needed money yesterday - specific past). Necesitaba más tiempo (I used to need more time - past ongoing need). Si tuviera problemas, necesitaría ayuda (If I had problems, I would need help - conditional). Necesitaré vacaciones (I will need vacation - future need)."
+    },
+    {
+    que: "Gustar - To like",
+    yo: ["me gusta/n", "me gustó", "me gustaba", "me gustaría", "me gustará"],
+    tu: ["te gusta/n", "te gustó", "te gustaba", "te gustaría", "te gustará"],
+    el: ["le gusta/n", "le gustó", "le gustaba", "le gustaría", "le gustará"],
+    nos: ["nos gusta/n", "nos gustó", "nos gustaba", "nos gustaría", "nos gustará"],
+    ellos: ["les gusta/n", "les gustó", "les gustaba", "les gustaría", "les gustará"],
+    example: "Me gusta el café (I like coffee - general preference). Me gustó la película (I liked the movie - specific past). Me gustaba ese lugar (I used to like that place - past preference). Me gustaría viajar (I would like to travel - polite desire). Me gustará conocerlo (I will like meeting him - future expectation)."
+    },
+    {
+    que: "Querer - To want/love",
+    yo: ["quiero", "quise", "quería", "querría", "querré"],
+    tu: ["quieres", "quisiste", "querías", "querrías", "querrás"],
+    el: ["quiere", "quiso", "quería", "querría", "querrá"],
+    nos: ["queremos", "quisimos", "queríamos", "querríamos", "querremos"],
+    ellos: ["quieren", "quisieron", "querían", "querrían", "querrán"],
+    example: "Quiero agua (I want water - present desire). Quise ayudarte (I wanted to help you - past attempt). Quería ser doctor (I wanted to be a doctor - past dream). Querría un café (I would like a coffee - polite request). Querré descansar (I will want to rest - future need)."
+    },
+    {
     que: "Tener - To have",
     yo: ["tengo", "tuve", "tenía", "tendría", "tendré"],
     tu: ["tienes", "tuviste", "tenías", "tendrías", "tendrás"],
     el: ["tiene", "tuvo", "tenía", "tendría", "tendrá"],
     nos: ["tenemos", "tuvimos", "teníamos", "tendríamos", "tendremos"],
-    ellos: ["tienen", "tuvieron", "tenían", "tendrían", "tendrán"]
-  },
-  {
-    que: "Hacer - To do/make",
-    yo: ["hago", "hice", "hacía", "haría", "haré"],
-    tu: ["haces", "hiciste", "hacías", "harías", "harás"],
-    el: ["hace", "hizo", "hacía", "haría", "hará"],
-    nos: ["hacemos", "hicimos", "hacíamos", "haríamos", "haremos"],
-    ellos: ["hacen", "hicieron", "hacían", "harían", "harán"]
-  },
-  {
-    que: "Decir - To say/tell",
-    yo: ["digo", "dije", "decía", "diría", "diré"],
-    tu: ["dices", "dijiste", "decías", "dirías", "dirás"],
-    el: ["dice", "dijo", "decía", "diría", "dirá"],
-    nos: ["decimos", "dijimos", "decíamos", "diríamos", "diremos"],
-    ellos: ["dicen", "dijeron", "decían", "dirían", "dirán"]
-  },
-  {
-    que: "Ir - To go",
-    yo: ["voy", "fui", "iba", "iría", "iré"],
-    tu: ["vas", "fuiste", "ibas", "irías", "irás"],
-    el: ["va", "fue", "iba", "iría", "irá"],
-    nos: ["vamos", "fuimos", "íbamos", "iríamos", "iremos"],
-    ellos: ["van", "fueron", "iban", "irían", "irán"]
-  },
-  {
-    que: "Ver - To see",
-    yo: ["veo", "vi", "veía", "vería", "veré"],
-    tu: ["ves", "viste", "veías", "verías", "verás"],
-    el: ["ve", "vio", "veía", "vería", "verá"],
-    nos: ["vemos", "vimos", "veíamos", "veríamos", "veremos"],
-    ellos: ["ven", "vieron", "veían", "verían", "verán"]
-  },
-  {
-    que: "Dar - To give",
-    yo: ["doy", "di", "daba", "daría", "daré"],
-    tu: ["das", "diste", "dabas", "darías", "darás"],
-    el: ["da", "dio", "daba", "daría", "dará"],
-    nos: ["damos", "dimos", "dábamos", "daríamos", "daremos"],
-    ellos: ["dan", "dieron", "daban", "darían", "darán"]
-  },
-  {
-    que: "Saber - To know",
-    yo: ["sé", "supe", "sabía", "sabría", "sabré"],
-    tu: ["sabes", "supiste", "sabías", "sabrías", "sabrás"],
-    el: ["sabe", "supo", "sabía", "sabría", "sabrá"],
-    nos: ["sabemos", "supimos", "sabíamos", "sabríamos", "sabremos"],
-    ellos: ["saben", "supieron", "sabían", "sabrían", "sabrán"]
-  },
-  {
-    que: "Querer - To want",
-    yo: ["quiero", "quise", "quería", "querría", "querré"],
-    tu: ["quieres", "quisiste", "querías", "querrías", "querrás"],
-    el: ["quiere", "quiso", "quería", "querría", "querrá"],
-    nos: ["queremos", "quisimos", "queríamos", "querríamos", "querremos"],
-    ellos: ["quieren", "quisieron", "querían", "querrían", "querrán"]
-  },
-  {
-    que: "Llegar - To arrive",
-    yo: ["llego", "llegué", "llegaba", "llegaría", "llegaré"],
-    tu: ["llegas", "llegaste", "llegabas", "llegarías", "llegarás"],
-    el: ["llega", "llegó", "llegaba", "llegaría", "llegará"],
-    nos: ["llegamos", "llegamos", "llegábamos", "llegaríamos", "llegaremos"],
-    ellos: ["llegan", "llegaron", "llegaban", "llegarían", "llegarán"]
-  },
-  {
-    que: "Empezar - To begin",
-    yo: ["empiezo", "empecé", "empezaba", "empezaría", "empezaré"],
-    tu: ["empiezas", "empezaste", "empezabas", "empezarías", "empezarás"],
-    el: ["empieza", "empezó", "empezaba", "empezaría", "empezará"],
-    nos: ["empezamos", "empezamos", "empezábamos", "empezaríamos", "empezaremos"],
-    ellos: ["empiezan", "empezaron", "empezaban", "empezarían", "empezarán"]
-  },
-  {
-    que: "Poder - To be able to",
+    ellos: ["tienen", "tuvieron", "tenían", "tendrían", "tendrán"],
+    example: "Tengo hambre (I'm hungry - present state). Tuve una idea (I had an idea - past event). Tenía un perro (I had a dog - past possession). Tendría más dinero si trabajara (I would have more money if I worked - conditional). Tendré 30 años (I will be 30 years old - future)."
+    },
+    {
+    que: "Poder - To be able to/can",
     yo: ["puedo", "pude", "podía", "podría", "podré"],
     tu: ["puedes", "pudiste", "podías", "podrías", "podrás"],
     el: ["puede", "pudo", "podía", "podría", "podrá"],
     nos: ["podemos", "pudimos", "podíamos", "podríamos", "podremos"],
-    ellos: ["pueden", "pudieron", "podían", "podrían", "podrán"]
-  },
-  {
-    que: "Ser - To be (permanent)",
-    yo: ["soy", "fui", "era", "sería", "seré"],
-    tu: ["eres", "fuiste", "eras", "serías", "serás"],
-    el: ["es", "fue", "era", "sería", "será"],
-    nos: ["somos", "fuimos", "éramos", "seríamos", "seremos"],
-    ellos: ["son", "fueron", "eran", "serían", "serán"]
-  },
-  {
-    que: "Estar - To be (temporary)",
-    yo: ["estoy", "estuve", "estaba", "estaría", "estaré"],
-    tu: ["estás", "estuviste", "estabas", "estarías", "estarás"],
-    el: ["está", "estuvo", "estaba", "estaría", "estará"],
-    nos: ["estamos", "estuvimos", "estábamos", "estaríamos", "estaremos"],
-    ellos: ["están", "estuvieron", "estaban", "estarían", "estarán"]
-  }];
+    ellos: ["pueden", "pudieron", "podían", "podrían", "podrán"],
+    example: "Puedo ayudar (I can help - present ability). Pude terminarlo (I was able to finish it - past achievement). Podía nadar bien (I could swim well - past ability). Podría llover (It might rain - possibility). Podré ir mañana (I will be able to go tomorrow - future ability)."
+    },
+    {
+    que: "Deber - Should/must",
+    yo: ["debo", "debí", "debía", "debería", "deberé"],
+    tu: ["debes", "debiste", "debías", "deberías", "deberás"],
+    el: ["debe", "debió", "debía", "debería", "deberá"],
+    nos: ["debemos", "debimos", "debíamos", "deberíamos", "deberemos"],
+    ellos: ["deben", "debieron", "debían", "deberían", "deberán"],
+    example: "Debo estudiar (I must study - obligation). Debí llamarte (I should have called you - past regret). Debía hacer la tarea (I was supposed to do homework - past obligation). Debería hacer ejercicio (I should exercise - advice). Deberé trabajar (I will have to work - future obligation)."
+    },
+    {
+    que: "Saber - To know (information)",
+    yo: ["sé", "supe", "sabía", "sabría", "sabré"],
+    tu: ["sabes", "supiste", "sabías", "sabrías", "sabrás"],
+    el: ["sabe", "supo", "sabía", "sabría", "sabrá"],
+    nos: ["sabemos", "supimos", "sabíamos", "sabríamos", "sabremos"],
+    ellos: ["saben", "supieron", "sabían", "sabrían", "sabrán"],
+    example: "Sé la respuesta (I know the answer - present knowledge). Supe la verdad (I found out the truth - moment of discovery). Sabía que vendrías (I knew you would come - past knowledge). Sabría qué hacer (I would know what to do - conditional knowledge). Sabré mañana (I will know tomorrow - future knowledge)."
+    },
+    {
+    que: "Conocer - To know (people/places)",
+    yo: ["conozco", "conocí", "conocía", "conocería", "conoceré"],
+    tu: ["conoces", "conociste", "conocías", "conocerías", "conocerás"],
+    el: ["conoce", "conoció", "conocía", "conocería", "conocerá"],
+    nos: ["conocemos", "conocimos", "conocíamos", "conoceríamos", "conoceremos"],
+    ellos: ["conocen", "conocieron", "conocían", "conocerían", "conocerán"],
+    example: "Conozco Madrid (I know Madrid - familiarity). Conocí a Juan ayer (I met Juan yesterday - first meeting). Conocía ese restaurante (I knew that restaurant - past familiarity). Conocería más gente si saliera (I would know more people if I went out - conditional). Conoceré a tu familia (I will meet your family - future)."
+    },
+    {
+    que: "Entender - To understand",
+    yo: ["entiendo", "entendí", "entendía", "entendería", "entenderé"],
+    tu: ["entiendes", "entendiste", "entendías", "entenderías", "entenderás"],
+    el: ["entiende", "entendió", "entendía", "entendería", "entenderá"],
+    nos: ["entendemos", "entendimos", "entendíamos", "entenderíamos", "entenderemos"],
+    ellos: ["entienden", "entendieron", "entendían", "entenderían", "entenderán"],
+    example: "Entiendo español (I understand Spanish - present ability). Entendí la explicación (I understood the explanation - completed understanding). Entendía las matemáticas (I used to understand math - past ability). Si me lo explicaras, entendería (If you explained it, I would understand - conditional). Entenderé con el tiempo (I will understand with time - future)."
+    },
+    {
+    que: "Creer - To believe",
+    yo: ["creo", "creí", "creía", "creería", "creeré"],
+    tu: ["crees", "creíste", "creías", "creerías", "creerás"],
+    el: ["cree", "creyó", "creía", "creería", "creerá"],
+    nos: ["creemos", "creímos", "creíamos", "creeríamos", "creeremos"],
+    ellos: ["creen", "creyeron", "creían", "creerían", "creerán"],
+    example: "Creo en ti (I believe in you - present belief). Creí lo que dijo (I believed what he said - past belief). Creía en fantasmas (I used to believe in ghosts - past belief). Creería si viera pruebas (I would believe if I saw evidence - conditional). Creeré cuando lo vea (I will believe when I see it - future)."
+    },
+    {
+    que: "Esperar - To wait/hope",
+    yo: ["espero", "esperé", "esperaba", "esperaría", "esperaré"],
+    tu: ["esperas", "esperaste", "esperabas", "esperarías", "esperarás"],
+    el: ["espera", "esperó", "esperaba", "esperaría", "esperará"],
+    nos: ["esperamos", "esperamos", "esperábamos", "esperaríamos", "esperaremos"],
+    ellos: ["esperan", "esperaron", "esperaban", "esperarían", "esperarán"],
+    example: "Espero el autobús (I wait for the bus - present action). Esperé una hora (I waited an hour - completed wait). Esperaba noticias (I was waiting for news - ongoing past). Esperaría contigo (I would wait with you - conditional). Esperaré aquí (I will wait here - future)."
+    },
+    {
+    que: "Buscar - To look for",
+    yo: ["busco", "busqué", "buscaba", "buscaría", "buscaré"],
+    tu: ["buscas", "buscaste", "buscabas", "buscarías", "buscarás"],
+    el: ["busca", "buscó", "buscaba", "buscaría", "buscará"],
+    nos: ["buscamos", "buscamos", "buscábamos", "buscaríamos", "buscaremos"],
+    ellos: ["buscan", "buscaron", "buscaban", "buscarían", "buscarán"],
+    example: "Busco trabajo (I'm looking for work - present search). Busqué las llaves (I looked for the keys - completed search). Buscaba un apartamento (I was looking for an apartment - ongoing past). Buscaría en otro lugar (I would look elsewhere - conditional). Buscaré mañana (I will look tomorrow - future)."
+    },
+    {
+    que: "Encontrar - To find",
+    yo: ["encuentro", "encontré", "encontraba", "encontraría", "encontraré"],
+    tu: ["encuentras", "encontraste", "encontrabas", "encontrarías", "encontrarás"],
+    el: ["encuentra", "encontró", "encontraba", "encontraría", "encontrará"],
+    nos: ["encontramos", "encontramos", "encontrábamos", "encontraríamos", "encontraremos"],
+    ellos: ["encuentran", "encontraron", "encontraban", "encontrarían", "encontrarán"],
+    example: "Encuentro problemas (I find problems - present discovery). Encontré una solución (I found a solution - completed discovery). Encontraba monedas (I used to find coins - past habit). Encontraría la respuesta (I would find the answer - conditional). Encontraré el camino (I will find the way - future)."
+    },
+    {
+    que: "Llamar - To call",
+    yo: ["llamo", "llamé", "llamaba", "llamaría", "llamaré"],
+    tu: ["llamas", "llamaste", "llamabas", "llamarías", "llamarás"],
+    el: ["llama", "llamó", "llamaba", "llamaría", "llamará"],
+    nos: ["llamamos", "llamamos", "llamábamos", "llamaríamos", "llamaremos"],
+    ellos: ["llaman", "llamaron", "llamaban", "llamarían", "llamarán"],
+    example: "Llamo a mi madre (I call my mother - present action). Llamé a la policía (I called the police - completed call). Llamaba todos los días (I used to call every day - past routine). Llamaría si tuviera problemas (I would call if I had problems - conditional). Llamaré más tarde (I will call later - future)."
+    },
+    {
+    que: "Trabajar - To work",
+    yo: ["trabajo", "trabajé", "trabajaba", "trabajaría", "trabajaré"],
+    tu: ["trabajas", "trabajaste", "trabajabas", "trabajarías", "trabajarás"],
+    el: ["trabaja", "trabajó", "trabajaba", "trabajaría", "trabajará"],
+    nos: ["trabajamos", "trabajamos", "trabajábamos", "trabajaríamos", "trabajaremos"],
+    ellos: ["trabajan", "trabajaron", "trabajaban", "trabajarían", "trabajarán"],
+    example: "Trabajo en una oficina (I work in an office - present job). Trabajé mucho ayer (I worked a lot yesterday - completed work). Trabajaba los fines de semana (I used to work weekends - past routine). Trabajaría desde casa (I would work from home - conditional). Trabajaré hasta tarde (I will work late - future)."
+    },
+    {
+    que: "Estudiar - To study",
+    yo: ["estudio", "estudié", "estudiaba", "estudiaría", "estudiaré"],
+    tu: ["estudias", "estudiaste", "estudiabas", "estudiarías", "estudiarás"],
+    el: ["estudia", "estudió", "estudiaba", "estudiaría", "estudiará"],
+    nos: ["estudiamos", "estudiamos", "estudiábamos", "estudiaríamos", "estudiaremos"],
+    ellos: ["estudian", "estudiaron", "estudiaban", "estudiarían", "estudiarán"],
+    example: "Estudio español (I study Spanish - present activity). Estudié anoche (I studied last night - completed study). Estudiaba en la universidad (I used to study at university - past activity). Estudiaría más si tuviera tiempo (I would study more if I had time - conditional). Estudiaré para el examen (I will study for the exam - future)."
+    },
+    {
+    que: "Ayudar - To help",
+    yo: ["ayudo", "ayudé", "ayudaba", "ayudaría", "ayudaré"],
+    tu: ["ayudas", "ayudaste", "ayudabas", "ayudarías", "ayudarás"],
+    el: ["ayuda", "ayudó", "ayudaba", "ayudaría", "ayudará"],
+    nos: ["ayudamos", "ayudamos", "ayudábamos", "ayudaríamos", "ayudaremos"],
+    ellos: ["ayudan", "ayudaron", "ayudaban", "ayudarían", "ayudarán"],
+    example: "Ayudo en casa (I help at home - present help). Ayudé a mi amigo (I helped my friend - completed help). Ayudaba a mis padres (I used to help my parents - past habit). Ayudaría si pudiera (I would help if I could - conditional). Ayudaré con la mudanza (I will help with the move - future)."
+    },
+    
+];
 const sentenceremA =[
 {statement:"lo que",exp:"Means 'that which' or 'what'. Refers to complete ideas: 'Lo que dijiste' (What you said), 'Lo que pasó' (What happened). Replaces an entire previous idea in conversation."},
 {statement:"se me olvidó",exp:"Accidental 'se' structure - expresses unintentional actions. Literally 'it forgot itself to me'. Used for mistakes, forgetfulness, or uncontrolled events: 'Se me cayó' (I dropped it), 'Se me rompió' (I broke it)."},
@@ -942,52 +998,80 @@ const sentenceremA =[
 {statement:"jitanjáfora",exp:"Jitanjáfora: Meaningless but musical words in poetry. 'Filiflama alabe cundre' - pure sound play. Shows Spanish poetic experimentation."}
 ];
 const buttons = ['button1', 'button2', 'button3'];
-let currentquetype 
+let currentquetype = 0;
 let currentchoiceQuestionIndex = 0;
-let currentconjQuestionindex = 0
-let currentsentenceindex = 0
-let Ranswer = 0
-let Wanswer = 0
-document.addEventListener('DOMContentLoaded', function(){shuffleArray(qna);shuffleArray(conjtableque); shuffleArray(sentenceremA);startfunc();
+let currentconjQuestionindex = 0;
+let currentsentenceindex = 0;
+let Ranswer = 0;
+let Wanswer = 0;
+
+document.addEventListener('DOMContentLoaded', function(){
+    shuffleArray(qna);
+    shuffleArray(conjtableque); 
+    shuffleArray(sentenceremA);
+    startfunc();
 });
 
 function startfunc(){
-document.getElementById('threechoice').style.display = "none";
-document.getElementById('conjtable').style.display = "none";
-document.getElementById('sentencerem').style.display = "none";
-document.getElementById('start').style.display ="";
-document.getElementById('startbtn').addEventListener("click", function(){document.getElementById('start').style.display = 'none'; setTimeout(selectquetype,1000)})
+    document.getElementById('threechoice').style.display = "none";
+    document.getElementById('conjtable').style.display = "none";
+    document.getElementById('sentencerem').style.display = "none";
+    document.getElementById('start').style.display = "";
+    document.getElementById('startbtn').addEventListener("click", function(){
+        document.getElementById('start').style.display = 'none'; 
+        setTimeout(selectquetype, 1000);
+    });
 }
 
-function resetAll (){
-currentchoiceQuestionIndex = 0;
-currentconjQuestionindex = 0
-currentsentenceindex = 0
-Ranswer = 0
-Wanswer = 0
-currentquetype = undefined
-document.getElementById('ranswer').innerHTML = Ranswer
-document.getElementById('wanswer').innerHTML = Wanswer
-startfunc()
+function resetAll(){
+    currentchoiceQuestionIndex = 0;
+    currentconjQuestionindex = 0;
+    currentsentenceindex = 0;
+    Ranswer = 0;
+    Wanswer = 0;
+    currentquetype = 0;
+    document.getElementById('ranswer').innerHTML = Ranswer;
+    document.getElementById('wanswer').innerHTML = Wanswer;
+    startfunc();
 }
 
-document.getElementById('startbtntop').onclick  = ()=> resetAll()
+document.getElementById('startbtntop').onclick = () => resetAll();
 
 function shuffleArray(array){
-    for (let i = array.length - 1; i > 0; i--) {const j = Math.floor(Math.random() * (i + 1));[array[i], array[j]] = [array[j], array[i]];}return array;
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 function selectquetype(){
-    currentquetype = Math.floor(Math.random() * 10); if (currentquetype < 7 ){threeChoiceque()} else {sentenceRem()};
-    console.log("success?")
+    currentquetype = Math.floor(Math.random() * 10); 
+    if (currentquetype < 5) {
+        threeChoiceque();
+    } else if (currentquetype < 8) { // 5, 6, 7
+        conjtable();
+    } else { // 8, 9
+        sentenceRem();
+    }
+    console.log(currentquetype);
 }
 
 function threeChoiceque() {
-const currentQ = qna[currentchoiceQuestionIndex];
-const answers = [currentQ.true, currentQ.false1, currentQ.false2];
-buttons.forEach(btnId => {document.getElementById(btnId).disabled = false;});
+    // Add bounds checking
+    if (currentchoiceQuestionIndex >= qna.length) {
+        shuffleArray(qna);
+        currentchoiceQuestionIndex = 0;
+    }
+    
+    const currentQ = qna[currentchoiceQuestionIndex];
+    const answers = [currentQ.true, currentQ.false1, currentQ.false2];
+    buttons.forEach(btnId => {
+        document.getElementById(btnId).disabled = false;
+    });
 
     document.getElementById('sentencerem').style.display = "none";
+    document.getElementById('conjtable').style.display = "none";
     document.getElementById('threechoice').style.display = "";
     document.getElementById("question").innerHTML = currentQ.que;
     
@@ -1000,33 +1084,87 @@ buttons.forEach(btnId => {document.getElementById(btnId).disabled = false;});
     document.getElementById("button1").dataset.correct = answers[0] === currentQ.true;
     document.getElementById("button2").dataset.correct = answers[1] === currentQ.true;
     document.getElementById("button3").dataset.correct = answers[2] === currentQ.true;
-    
 }
 
 function checkAnswer(button){
-const buttonbox = document.getElementById("workbox");
-if (button.dataset.correct === "true") {
-buttons.forEach(btnId => {document.getElementById(btnId).disabled = true;});
-workbox.style.backgroundColor = "green";++Ranswer;document.getElementById('ranswer').innerHTML = Ranswer;currentchoiceQuestionIndex++;;
+    const buttonbox = document.getElementById("workbox");
+    if (button.dataset.correct === "true") {
+        buttons.forEach(btnId => {
+            document.getElementById(btnId).disabled = true;
+        });
+        buttonbox.style.backgroundColor = "green";
+        Ranswer++;
+        document.getElementById('ranswer').innerHTML = Ranswer;
+        currentchoiceQuestionIndex++;
 
-setTimeout(function(){selectquetype();
-buttonbox.style.backgroundColor = "";},1500)}
-else {buttonbox.style.backgroundColor = "red"; ++Wanswer; document.getElementById('wanswer').innerHTML = Wanswer
-buttons.forEach(btnId => {document.getElementById(btnId).disabled = true;});
-setTimeout(function() {buttonbox.style.backgroundColor = "";buttons.forEach(btnId => {document.getElementById(btnId).disabled = false;});}, 1500);}
+        setTimeout(function(){
+            selectquetype();
+            buttonbox.style.backgroundColor = "";
+        }, 1500);
+    } else {
+        buttonbox.style.backgroundColor = "red"; 
+        Wanswer++; 
+        document.getElementById('wanswer').innerHTML = Wanswer;
+        buttons.forEach(btnId => {
+            document.getElementById(btnId).disabled = true;
+        });
+        setTimeout(function() {
+            buttonbox.style.backgroundColor = "";
+            buttons.forEach(btnId => {
+                document.getElementById(btnId).disabled = false;
+            });
+        }, 1500);
+    }
 }
 
-function sentenceRem (){
-document.getElementById('sentencerem').style.display = "";
-document.getElementById('threechoice').style.display = "none";
-document.getElementById('explaination').onclick  = ()=> selectquetype(); ++currentsentenceindex;
-
-document.getElementById("explaination").innerHTML = sentenceremA[currentsentenceindex].exp;
-document.getElementById("question2").innerHTML = sentenceremA[currentsentenceindex].statement;
-
-
-
+function sentenceRem(){
+    // Add bounds checking
+    if (currentsentenceindex >= sentenceremA.length) {
+        shuffleArray(sentenceremA);
+        currentsentenceindex = 0;
+    }
+    
+    document.getElementById('sentencerem').style.display = "";
+    document.getElementById('threechoice').style.display = "none";
+    document.getElementById('conjtable').style.display = "none";
+    
+    document.getElementById("explaination").innerHTML = sentenceremA[currentsentenceindex].exp;
+    document.getElementById("question2").innerHTML = sentenceremA[currentsentenceindex].statement;
+    
+    document.getElementById('explaination').onclick = () => {
+        currentsentenceindex++;
+        selectquetype();
+    };
 }
 
-
-
+function conjtable() {
+    // Add bounds checking
+    if (currentconjQuestionindex >= conjtableque.length) {
+        shuffleArray(conjtableque);
+        currentconjQuestionindex = 0;
+    }
+    
+    document.getElementById('conjtable').style.display = "";
+    document.getElementById('threechoice').style.display = "none";
+    document.getElementById('sentencerem').style.display = "none";
+    document.getElementById('conjtablebox').onclick = () => {  currentconjQuestionindex++;selectquetype();}
+    
+    const currentConj = conjtableque[currentconjQuestionindex];
+    document.getElementById("question3").innerHTML = currentConj.que;
+    document.getElementById("example").innerHTML = currentConj.example;
+    const pronouns = ['yo', 'tu', 'el', 'nos', 'ellos'];
+    const tenses = [0, 1, 2, 3, 4]; 
+    
+    pronouns.forEach(pronoun => {
+        const row = document.getElementById(pronoun);
+        if (row && currentConj[pronoun]) {
+            const cells = row.getElementsByTagName('td');
+            tenses.forEach(tenseIndex => {
+                if (cells[tenseIndex] && currentConj[pronoun][tenseIndex]) {
+                    cells[tenseIndex].textContent = currentConj[pronoun][tenseIndex];
+                }
+            });
+        }
+    });
+    
+}
